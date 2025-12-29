@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Local agent / write tests
+src/__codex_test.txt
+src/assets/__write_test.txt
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
