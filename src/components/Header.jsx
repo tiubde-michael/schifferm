@@ -31,10 +31,8 @@ function Header() {
     setMenuOpen(false);
     if (!anchor) return;
     setTimeout(() => {
-      const el = document.getElementById(anchor);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
+      const element = document.getElementById(anchor);
+      if (element) element.scrollIntoView({ behavior: "smooth" });
     }, 80);
   };
 
@@ -74,11 +72,7 @@ function Header() {
             )
           )}
 
-          <div
-            className="relative"
-            onMouseEnter={() => setServicesOpen(true)}
-            onMouseLeave={() => setServicesOpen(false)}
-          >
+          <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
             <button
               className="flex items-center gap-1 text-sm font-medium text-slate-700 transition hover:text-implementers-blue"
               onClick={() => setServicesOpen((prev) => !prev)}
@@ -88,20 +82,23 @@ function Header() {
               <ChevronDown className="h-4 w-4" />
             </button>
             {servicesOpen && (
-              <div className="absolute right-0 mt-3 w-56 rounded-lg border border-slate-200 bg-white p-2 shadow-xl">
-                {serviceLinks.map((item) => (
-                  <NavLink
-                    key={item.to}
-                    to={item.to}
-                    className={({ isActive }) =>
-                      `block rounded-md px-3 py-2 text-sm font-medium transition hover:bg-slate-50 ${
-                        isActive ? "text-implementers-blue" : "text-slate-700"
-                      }`
-                    }
-                  >
-                    {item.label}
-                  </NavLink>
-                ))}
+              <div className="absolute right-0 top-full z-50 pt-3">
+                <div className="w-56 rounded-lg border border-slate-200 bg-white p-2 shadow-xl">
+                  {serviceLinks.map((item) => (
+                    <NavLink
+                      key={item.to}
+                      to={item.to}
+                      onClick={() => setServicesOpen(false)}
+                      className={({ isActive }) =>
+                        `block rounded-md px-3 py-2 text-sm font-medium transition hover:bg-slate-50 ${
+                          isActive ? "text-implementers-blue" : "text-slate-700"
+                        }`
+                      }
+                    >
+                      {item.label}
+                    </NavLink>
+                  ))}
+                </div>
               </div>
             )}
           </div>
@@ -187,3 +184,4 @@ function Header() {
 }
 
 export default Header;
+

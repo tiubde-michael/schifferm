@@ -46,8 +46,8 @@ function addIdsToNamedAnchors(html) {
 function rewriteImages(html) {
   return html.replace(/src="([^"]+?\.(?:jpg|jpeg|gif|png))"/gi, (match, src) => {
     if (/^(https?:)?\/\//i.test(src)) return match;
-    if (src.includes("/")) return `src="/legacy/process/${src.split("/").pop()}"`;
-    return `src="/legacy/process/${src}"`;
+    if (src.includes("/")) return `src="/migrated/process/${src.split("/").pop()}"`;
+    return `src="/migrated/process/${src}"`;
   });
 }
 

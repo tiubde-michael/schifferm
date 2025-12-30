@@ -56,12 +56,9 @@ function Home() {
               <Sparkles className="h-4 w-4 text-implementers-accent" />
               KI-Agenten, Beratung und Umsetzung
             </div>
-            <h1 className="font-heading text-4xl leading-tight sm:text-5xl">
-              Traditionelle Expertise trifft auf KI-Innovation
-            </h1>
+            <h1 className="font-heading text-4xl leading-tight sm:text-5xl">Traditionelle Expertise trifft auf KI-Innovation</h1>
             <p className="mt-4 max-w-2xl text-lg text-white/85">
-              Wir verbinden bewährte Beratungsmethoden mit modernsten KI-Agenten und Sprachagenten, um Ihr Unternehmen in
-              die Zukunft zu führen.
+              Wir verbinden bewährte Beratungsmethoden mit modernsten KI-Agenten und Sprachagenten, um Ihr Unternehmen in die Zukunft zu führen.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
               {highlights.map((item) => (
@@ -120,8 +117,8 @@ function Home() {
           </div>
         </div>
         <p className="max-w-3xl text-base text-slate-700">
-          Wir bauen KI-Agenten auf Ihren Daten, optimieren Prozesse entlang Lean- und Six-Sigma-Prinzipien und steuern
-          Projekte nach PDCA. Immer DSGVO-konform, immer mit messbaren Ergebnissen.
+          Wir bauen KI-Agenten auf Ihren Daten, optimieren Prozesse entlang Lean- und Six-Sigma-Prinzipien und steuern Projekte nach PDCA. Immer
+          DSGVO-konform, immer mit messbaren Ergebnissen.
         </p>
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -136,9 +133,7 @@ function Home() {
               </div>
               <h3 className="mt-4 text-xl font-semibold text-slate-900">{service.title}</h3>
               <p className="mt-2 text-sm text-slate-600">{service.description}</p>
-              <span className="mt-4 inline-flex items-center text-sm font-semibold text-implementers-blue">
-                Mehr erfahren
-              </span>
+              <span className="mt-4 inline-flex items-center text-sm font-semibold text-implementers-blue">Mehr erfahren</span>
             </Link>
           ))}
         </div>
@@ -148,3 +143,4 @@ function Home() {
 }
 
 export default Home;
+

@@ -29,8 +29,7 @@ function Prozessoptimierung() {
             <p className="text-xs font-semibold uppercase tracking-wide text-implementers-blue">Prozessoptimierung</p>
             <h1 className="font-heading text-3xl text-slate-900">Lean, Six Sigma und KVP</h1>
             <p className="max-w-3xl text-slate-700">
-              Wir verbinden klassische Methoden mit KI-gestützten Analysen. So werden Engpässe sichtbar, Abläufe schlanker
-              und Teams handlungsfähig.
+              Wir verbinden klassische Methoden mit KI-gestützten Analysen. So werden Engpässe sichtbar, Abläufe schlanker und Teams handlungsfähig.
             </p>
           </div>
 
@@ -127,3 +126,4 @@ function Prozessoptimierung() {
 }
 
 export default Prozessoptimierung;
+

@@ -41,12 +41,12 @@ Because the app uses `HashRouter`, no server rewrite rules are required. Routes 
 Legacy content is embedded as sanitized HTML:
 - Legal pages source HTML: `src/content/legacy/*.html`
 - Process pages source HTML: `src/content/legacy/process/*.html`
-- Legacy images used by the process pages: `public/legacy/process/*`
+- Legacy images used by the process pages: `public/migrated/process/*`
 - AGB PDF: `public/agb/TI-DO-AGB.pdf`
 
 Process pages use an internal renderer that:
 - removes scripts/styles/font tags and noisy attributes
-- rewrites image sources to `/legacy/process/...`
+- rewrites image sources to `/migrated/process/...`
 - rewrites `.htm` links to the new HashRouter routes
 
 If you remove `legacy` entirely, make sure all required HTML/images are already copied into the locations above.

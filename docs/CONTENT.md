@@ -17,8 +17,7 @@ Legacy HTML sources (UTF-8):
 - `src/content/legacy/process/*.html`
 
 Legacy images:
-- `public/legacy/process/*`
+- `public/migrated/process/*`
 
 ## Legal documents
 - AGB PDF: `public/agb/TI-DO-AGB.pdf`
-
