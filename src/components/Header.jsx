@@ -5,6 +5,8 @@ import LogoMark from "./LogoMark";
 
 const navLinks = [
   { label: "Home", to: "/" },
+  { label: "Recorder", to: "/Recorder" },
+  { label: "Settings", to: "/Settings" },
   { label: "Über uns", to: "/", anchor: "about" },
   { label: "Blog", to: "/blog" },
   { label: "Kontakt", to: "/kontakt" },

@@ -1,20 +1,12 @@
-import { useEffect, useMemo } from "react";
+﻿import { useEffect, useMemo } from "react";
 import { Helmet } from "react-helmet-async";
 import { FileText, Globe, ShieldCheck } from "lucide-react";
 import impressumRaw from "../content/legacy/impressum.html?raw";
 import datenschutzRaw from "../content/legacy/datenschutz.html?raw";
 import disclaimerRaw from "../content/legacy/disclaimer.html?raw";
 import { getLegacySection } from "../lib/legacySections";
+import { sectionIds } from "./rechtlichesSectionIds";
 
-const sectionIds = {
-  impressumDe: "impressum-de",
-  datenschutzDe: "datenschutz-de",
-  disclaimerDe: "disclaimer-de",
-  siteNoticeEn: "site-notice-en",
-  privacyEn: "privacy-en",
-  disclaimerEn: "disclaimer-en",
-  agb: "agb",
-};
 
 function scrollToId(id) {
   const element = document.getElementById(id);
@@ -97,7 +89,7 @@ function Rechtliches({ initialSectionId = sectionIds.impressumDe }) {
         <title>Impressum, Datenschutz, Disclaimer | The Implementers GmbH</title>
         <meta
           name="description"
-          content="Impressum, Datenschutzerklärung, Disclaimer und AGB der The Implementers GmbH."
+          content="Impressum, DatenschutzerklÃ¤rung, Disclaimer und AGB der The Implementers GmbH."
         />
       </Helmet>
 
@@ -106,7 +98,7 @@ function Rechtliches({ initialSectionId = sectionIds.impressumDe }) {
           <p className="text-xs font-semibold uppercase tracking-wide text-implementers-blue">Rechtliches</p>
           <h1 className="font-heading text-3xl text-slate-900">Impressum, Datenschutz und Disclaimer</h1>
           <p className="mt-2 max-w-3xl text-slate-700">
-            Sprungmarken führen direkt zu den jeweiligen Abschnitten in Deutsch und Englisch.
+            Sprungmarken fÃ¼hren direkt zu den jeweiligen Abschnitten in Deutsch und Englisch.
           </p>
 
           <div className="mt-6 grid gap-3 md:grid-cols-2">
@@ -117,7 +109,7 @@ function Rechtliches({ initialSectionId = sectionIds.impressumDe }) {
               </div>
               <div className="mt-3 flex flex-wrap gap-2">
                 <JumpLink label="Impressum" id={sectionIds.impressumDe} />
-                <JumpLink label="Datenschutzerklärung" id={sectionIds.datenschutzDe} icon={ShieldCheck} />
+                <JumpLink label="DatenschutzerklÃ¤rung" id={sectionIds.datenschutzDe} icon={ShieldCheck} />
                 <JumpLink label="Disclaimer" id={sectionIds.disclaimerDe} />
               </div>
             </div>
@@ -143,7 +135,7 @@ function Rechtliches({ initialSectionId = sectionIds.impressumDe }) {
               className="inline-flex items-center gap-2 rounded-full bg-implementers-accent px-5 py-2.5 text-sm font-semibold text-slate-900 transition hover:bg-implementers-green"
             >
               <FileText className="h-4 w-4" />
-              Allgemeine Geschäftsbedingungen (AGB)
+              Allgemeine GeschÃ¤ftsbedingungen (AGB)
             </a>
           </div>
         </div>
@@ -151,7 +143,7 @@ function Rechtliches({ initialSectionId = sectionIds.impressumDe }) {
 
       <section className="mx-auto max-w-6xl space-y-6 px-4 py-12">
         <LegalSection id={sectionIds.impressumDe} title="Impressum (DE)" html={content.impressumDe} />
-        <LegalSection id={sectionIds.datenschutzDe} title="Datenschutzerklärung (DE)" html={content.datenschutzDe} />
+        <LegalSection id={sectionIds.datenschutzDe} title="DatenschutzerklÃ¤rung (DE)" html={content.datenschutzDe} />
         <LegalSection id={sectionIds.disclaimerDe} title="Disclaimer (DE)" html={content.disclaimerDe} />
         <LegalSection id={sectionIds.siteNoticeEn} title="Site Notice (EN)" html={content.siteNoticeEn} />
         <LegalSection id={sectionIds.privacyEn} title="Privacy Policy (EN)" html={content.privacyEn} />
@@ -162,4 +154,4 @@ function Rechtliches({ initialSectionId = sectionIds.impressumDe }) {
 }
 
 export default Rechtliches;
-export { sectionIds };
+

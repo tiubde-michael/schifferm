@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+﻿import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Blog from "./pages/Blog";
@@ -7,7 +7,10 @@ import Kontakt from "./pages/Kontakt";
 import LokaleLLMs from "./pages/LokaleLLMs";
 import Prozessoptimierung from "./pages/Prozessoptimierung";
 import LeistungenProjektmanagement from "./pages/LeistungenProjektmanagement";
-import Rechtliches, { sectionIds } from "./pages/Rechtliches";
+import Rechtliches from "./pages/Rechtliches";
+import Recorder from "./pages/Recorder";
+import Settings from "./pages/Settings";
+import { sectionIds } from "./pages/rechtlichesSectionIds";
 import LegacyProcessPage from "./pages/legacy/LegacyProcessPage";
 import kaizenRaw from "./content/legacy/process/kaizen00.html?raw";
 import fiveSRaw from "./content/legacy/process/5s00.html?raw";
@@ -30,6 +33,8 @@ function App() {
       <main className="pt-20">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Recorder" element={<Recorder />} />
+          <Route path="/Settings" element={<Settings />} />
           <Route path="/leistungen/lokale-llms" element={<LokaleLLMs />} />
           <Route path="/leistungen/projektmanagement" element={<LeistungenProjektmanagement />} />
           <Route path="/leistungen/prozessoptimierung" element={<Prozessoptimierung />} />
@@ -55,7 +60,7 @@ function App() {
           />
           <Route
             path="/leistungen/prozessoptimierung/begriffserklaerung"
-            element={<LegacyProcessPage title="Begriffserklärung" rawHtml={begriffeRaw} />}
+            element={<LegacyProcessPage title="BegriffserklÃ¤rung" rawHtml={begriffeRaw} />}
           />
           <Route
             path="/leistungen/prozessoptimierung/vision-strategie"
@@ -99,3 +104,4 @@ function App() {
 }
 
 export default App;
+

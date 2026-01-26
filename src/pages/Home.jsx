@@ -12,7 +12,7 @@ const heroTiles = [
 const services = [
   {
     title: "Lokale LLMs & RAG",
-    description: "DSGVO-konforme Wissensagenten auf Basis von Ollama, GPT-4-OS 20B und RAG-Pipelines.",
+    description: "DSGVO-konforme Wissensagenten auf Basis von Ollama, GPT-OSS 20B und RAG-Pipelines.",
     to: "/leistungen/lokale-llms",
     icon: ShieldCheck,
   },

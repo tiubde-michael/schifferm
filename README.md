@@ -1,5 +1,7 @@
 # The Implementers GmbH Website (React + Vite)
 
+Last updated: 14-Jan-2026
+
 Modern single-page website for `the-implementers.de` built with:
 - React + Vite
 - `react-router-dom` with `HashRouter` (static hosting friendly)
@@ -31,6 +33,70 @@ Output is written to `dist/` (do not commit; it is ignored by `.gitignore`).
 Because the app uses `HashRouter`, no server rewrite rules are required. Routes look like:
 - `/#/leistungen/prozessoptimierung`
 - `/#/kontakt`
+- `/#/Recorder`
+- `/#/Settings`
+
+## Recorder App (Audio + Text Upload)
+
+Mobile-friendly recorder that works in Android/Chrome and supports offline uploads.
+
+### Features
+- Audio recording via `MediaRecorder` (webm)
+- Text-only submissions (when no audio is recorded)
+- Local storage via IndexedDB (`idb`) with an upload queue
+- Optional metadata fields: patient/id, dob, topic
+- Uploads via multipart/form-data to the configured webhook
+- Basic Auth (username + password) for webhook access
+
+### Routes
+- Recorder: `/#/Recorder`
+- Settings: `/#/Settings`
+
+### Settings
+Settings are stored in `localStorage`:
+- Webhook URL (default: `https://n8n.ti-ub-ki.ddns.net/webhook/audio-upload`)
+- Basic Auth Username
+- Basic Auth Passwort
+- Target Sample Rate (metadata only; MediaRecorder cannot enforce)
+
+### Upload payload
+Multipart form fields:
+- `file`: audio/webm (only for audio uploads)
+- `patient` (optional)
+- `dob` (optional)
+- `topic` (optional)
+- `clientTimestamp`: ISO string
+- `targetSampleRate`: number or empty string
+
+### File naming
+Format:
+- `<MODE>-<USERNAME>-recording-<ISO>.webm`
+- `<MODE>-<USERNAME>-text-<ISO>` (text-only queue entries)
+
+Mode values:
+- `2 Personen` (no prefix)
+- `Diktat` (prefix `Diktat-`)
+- `Team` (prefix `Team-`)
+
+### Offline queue behavior
+- After stopping a recording, the audio is saved to IndexedDB.
+- Upload starts automatically; failures remain in the queue.
+- Queue entries can be retried, downloaded (audio), or deleted.
+
+### Required HTTPS
+Microphone access requires HTTPS (or localhost).
+
+### Troubleshooting
+- If uploads fail with `403`, verify Basic Auth on the n8n webhook (not only the UI).
+- If the queue does not show items, clear site data or update IndexedDB (DB version upgrade is included).
+
+### Key files
+- `src/pages/Recorder.jsx`
+- `src/pages/Settings.jsx`
+- `src/components/UploadQueue.jsx`
+- `src/lib/audioDB.js`
+- `src/lib/api.js`
+- `src/lib/storage.js`
 
 ## Content notes
 
