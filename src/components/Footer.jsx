@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import LogoMark from "./LogoMark";
 
 const legalLinks = [
@@ -24,7 +24,7 @@ function Footer() {
         <div className="flex flex-col items-start gap-3 md:items-end">
           <div className="flex gap-4">
             {legalLinks.map((item) => (
-              <Link key={item.to} to={item.to} className="text-sm text-slate-200 hover:text-implementers-accent">
+              <Link key={item.to} href={item.to} className="text-sm text-slate-200 hover:text-implementers-accent">
                 {item.label}
               </Link>
             ))}

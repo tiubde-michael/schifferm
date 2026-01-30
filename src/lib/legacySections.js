@@ -18,9 +18,9 @@ function stripFontAndAttrs(html) {
 
 function normalizeLinks(html) {
   return html
-    .replace(/href="Datenschutzerklaerung\.htm(#.*?)?"/gi, 'href="/#/datenschutz"')
-    .replace(/href="Disclaimer\.htm(#.*?)?"/gi, 'href="/#/disclaimer"')
-    .replace(/href="Impressum\.htm(#.*?)?"/gi, 'href="/#/impressum"')
+    .replace(/href="Datenschutzerklaerung\.htm(#.*?)?"/gi, 'href="/datenschutz"')
+    .replace(/href="Disclaimer\.htm(#.*?)?"/gi, 'href="/disclaimer"')
+    .replace(/href="Impressum\.htm(#.*?)?"/gi, 'href="/impressum"')
     .replace(/href="AGB\/TI-DO-AGB\.pdf"/gi, 'href="/agb/TI-DO-AGB.pdf"');
 }
 
@@ -58,4 +58,3 @@ export function getLegacySection({ html, anchorName, stopAnchors }) {
   const section = extractFromAnchor(html, anchorName, stopAnchors);
   return sanitizeLegacyHtml(section);
 }
-

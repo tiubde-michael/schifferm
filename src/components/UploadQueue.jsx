@@ -1,5 +1,6 @@
+"use client";
+
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { deleteRecording, getPendingUploads } from "../lib/audioDB";
 
 function formatDate(value) {
   if (!value) {

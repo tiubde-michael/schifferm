@@ -4,28 +4,46 @@ const DB_NAME = "recorder-db";
 const DB_VERSION = 2;
 const STORE_NAME = "recordings";
 
-const dbPromise = openDB(DB_NAME, DB_VERSION, {
-  upgrade(db, _oldVersion, _newVersion, transaction) {
-    let store;
-    if (!db.objectStoreNames.contains(STORE_NAME)) {
-      store = db.createObjectStore(STORE_NAME, {
-        keyPath: "id",
-        autoIncrement: true,
-      });
-    } else {
-      store = transaction.objectStore(STORE_NAME);
-    }
-    if (!store.indexNames.contains("uploaded")) {
-      store.createIndex("uploaded", "uploaded");
-    }
-    if (!store.indexNames.contains("createdAt")) {
-      store.createIndex("createdAt", "createdAt");
-    }
-  },
-});
+let dbPromise = null;
+
+function getDbPromise() {
+  if (typeof window === "undefined" || typeof indexedDB === "undefined") {
+    return null;
+  }
+  if (!dbPromise) {
+    dbPromise = openDB(DB_NAME, DB_VERSION, {
+      upgrade(db, _oldVersion, _newVersion, transaction) {
+        let store;
+        if (!db.objectStoreNames.contains(STORE_NAME)) {
+          store = db.createObjectStore(STORE_NAME, {
+            keyPath: "id",
+            autoIncrement: true,
+          });
+        } else {
+          store = transaction.objectStore(STORE_NAME);
+        }
+        if (!store.indexNames.contains("uploaded")) {
+          store.createIndex("uploaded", "uploaded");
+        }
+        if (!store.indexNames.contains("createdAt")) {
+          store.createIndex("createdAt", "createdAt");
+        }
+      },
+    });
+  }
+  return dbPromise;
+}
+
+async function requireDb() {
+  const promise = getDbPromise();
+  if (!promise) {
+    throw new Error("IndexedDB unavailable in this environment.");
+  }
+  return promise;
+}
 
 export async function saveRecording(blob, meta) {
-  const db = await dbPromise;
+  const db = await requireDb();
   const record = {
     createdAt: meta.createdAt,
     filename: meta.filename,
@@ -40,7 +58,7 @@ export async function saveRecording(blob, meta) {
 }
 
 export async function saveTextEntry(meta) {
-  const db = await dbPromise;
+  const db = await requireDb();
   const record = {
     createdAt: meta.createdAt,
     filename: meta.filename,
@@ -55,7 +73,7 @@ export async function saveTextEntry(meta) {
 }
 
 export async function getPendingUploads() {
-  const db = await dbPromise;
+  const db = await requireDb();
   let records = [];
   try {
     records = await db.getAllFromIndex(STORE_NAME, "uploaded", false);
@@ -71,7 +89,7 @@ export async function getPendingUploads() {
 }
 
 export async function markAsUploaded(id) {
-  const db = await dbPromise;
+  const db = await requireDb();
   const record = await db.get(STORE_NAME, id);
   if (!record) {
     return;
@@ -81,6 +99,6 @@ export async function markAsUploaded(id) {
 }
 
 export async function deleteRecording(id) {
-  const db = await dbPromise;
+  const db = await requireDb();
   await db.delete(STORE_NAME, id);
 }
