@@ -87,12 +87,18 @@ export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const post = getPostBySlug(resolvedParams.slug);
   if (!post) return {};
-  const url = `${siteUrl}/blog/${post.slug}`;
+  const url = `${siteUrl}/blog/${post.slug}/`;
   const ogImage = post.ogImage ? `${siteUrl}${post.ogImage}` : undefined;
+  const author = post.author || "Michael Schiffer";
+  const publishedTime = post.date ? new Date(post.date).toISOString() : undefined;
 
   return {
     title: post.title,
     description: post.excerpt,
+    authors: [{ name: author }],
+    other: {
+      author,
+    },
     alternates: {
       canonical: url,
     },
@@ -101,6 +107,8 @@ export async function generateMetadata({ params }) {
       description: post.excerpt,
       url,
       type: "article",
+      publishedTime,
+      authors: [author],
       images: ogImage
         ? [
             {

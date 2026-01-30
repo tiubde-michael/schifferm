@@ -2,10 +2,10 @@
 
 Last updated: 30-Jan-2026
 
-SSR-ready website for `the-implementers.de` built with:
-- Next.js (App Router, SSR)
+Static export for `the-implementers.de` built with:
+- Next.js (App Router, SSG export)
 - Tailwind CSS
-- Server-rendered Metadata + OpenGraph for blog shares
+- Pre-rendered Metadata + OpenGraph for blog shares
 
 ## Development
 
@@ -14,18 +14,25 @@ npm install
 npm run dev
 ```
 
-## Build (production)
+## Build (production / static export)
 
 ```powershell
 npm run build
-npm run start
 ```
 
 ## Deployment
 
-Node-based deployment on the VM:
-1. `npm run build`
-2. `npm run start`
+IONOS Webspace (static export):
+1. `npm run build` (outputs `out/`)
+2. Upload the contents of `out/` to `/the-implementers.de`
+
+Set `NEXT_PUBLIC_SITE_URL=https://the-implementers.de` for correct absolute OG URLs.
+
+### One-command deploy (IONOS Webspace)
+
+```bash
+IONOS_SFTP_PASS='your-password' NEXT_PUBLIC_SITE_URL='https://the-implementers.de' ./scripts/deploy-webspace.sh
+```
 
 ## Health Check (Routen prüfen)
 
@@ -119,6 +126,7 @@ Legacy Hash-URLs like `/#/blog` are not server-redirectable. The canonical URLs 
    - `slug` (URL-safe, z. B. `mein-beitrag`)
    - `title`
    - `excerpt`
+   - `author` (z. B. `Michael Schiffer`)
    - `date` (optional)
    - `coverImage` (z. B. `/blog/mein-beitrag/cover.jpg`)
    - `ogImage` (z. B. `/blog/mein-beitrag/og-1200x627.png`)
@@ -126,6 +134,7 @@ Legacy Hash-URLs like `/#/blog` are not server-redirectable. The canonical URLs 
 2. **Assets platzieren**:
    - Cover: `public/blog/<slug>/cover.jpg`
    - OG Image (1200x627): `public/blog/<slug>/og-1200x627.png`
+   - Optional: `node scripts/generate-og-images.mjs` erzeugt OG‑Images aus den Covers.
 3. **Metadaten prüfen**: `/blog/[slug]` nutzt `generateMetadata` und setzt:
    - `og:title`, `og:description`, `og:image`, `og:url`
    - `twitter:card` = `summary_large_image`

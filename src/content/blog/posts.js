@@ -4,6 +4,7 @@ export const posts = [
     title: "Arztdokumentation mit lokaler LLM",
     excerpt:
       "Wie ein On-Prem LLM medizinische Dokumentation beschleunigt und gleichzeitig Datenschutz sicherstellt.",
+    author: "Michael Schiffer",
     date: "2026-01-15",
     coverImage: "/blog/arztdokumentation-mit-lokaler-llm/cover.jpg",
     ogImage: "/blog/arztdokumentation-mit-lokaler-llm/og-1200x627.png",
@@ -22,6 +23,7 @@ export const posts = [
     slug: "automatische-auswertung-von-schmerzfrageboegen",
     title: "Automatische Auswertung von Schmerzfragebögen",
     excerpt: "Schnellere Auswertung, bessere Patientensicht – KI-gestützte Auswertung mit klaren Guardrails.",
+    author: "Michael Schiffer",
     date: "2026-01-20",
     coverImage: "/blog/automatische-auswertung-von-schmerzfrageboegen/cover.jpg",
     ogImage: "/blog/automatische-auswertung-von-schmerzfrageboegen/og-1200x627.png",
@@ -40,6 +42,7 @@ export const posts = [
     slug: "Roboter-werden-bessere-Chirurgen",
     title: "Roboter werden bessere Chirurgen",
     excerpt: "Eine provokante These mit realistischem Zeithorizont: Warum skalierte KI-Erfahrung chirurgische Qualität verändern kann.",
+    author: "Michael Schiffer",
     date: "2026-01-30",
     coverImage: "/blog/Roboter-werden-bessere-Chirurgen/cover.jpg",
     ogImage: "/blog/Roboter-werden-bessere-Chirurgen/og-1200x627.png",

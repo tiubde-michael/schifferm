@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 import LogoMark from "../LogoMark";
 
 const pdcaImage = "/assets/images/PDCA.jpg";
@@ -30,18 +29,27 @@ function LeistungenProjektmanagement({ sections }) {
     kmTitle: sections?.kmTitle || "",
   };
 
-  const searchParams = useSearchParams();
-  const activeSection = searchParams?.get("section") || "";
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
-    const section = searchParams?.get("section");
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const section = params.get("section") || "";
     if (!section) return;
+    setActiveSection(section);
     const element = document.getElementById(section);
     if (!element) return;
     setTimeout(() => element.scrollIntoView({ behavior: "smooth", block: "start" }), 0);
-  }, [searchParams]);
+  }, []);
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
+  const handleJump = (id) => () => {
+    setActiveSection(id);
+    const element = document.getElementById(id);
+    if (!element) return;
+    setTimeout(() => element.scrollIntoView({ behavior: "smooth", block: "start" }), 0);
+  };
 
   const jumpLinkClass = (id) =>
     [
@@ -67,19 +75,19 @@ function LeistungenProjektmanagement({ sections }) {
         <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <div className="text-sm font-semibold text-slate-900">Sprungmarken</div>
           <div className="mt-3 flex flex-wrap gap-2">
-            <Link href="?section=projektmanagement" className={jumpLinkClass("projektmanagement")}>
+            <Link href="?section=projektmanagement" className={jumpLinkClass("projektmanagement")} onClick={handleJump("projektmanagement")}>
               Projektmanagement (#projektmanagement)
             </Link>
-            <Link href="?section=systemanalyse" className={jumpLinkClass("systemanalyse")}>
+            <Link href="?section=systemanalyse" className={jumpLinkClass("systemanalyse")} onClick={handleJump("systemanalyse")}>
               Systemanalyse (#systemanalyse)
             </Link>
-            <Link href="?section=lean" className={jumpLinkClass("lean")}>
+            <Link href="?section=lean" className={jumpLinkClass("lean")} onClick={handleJump("lean")}>
               Lean & Effizienz (#lean)
             </Link>
-            <Link href="?section=verlagerungen" className={jumpLinkClass("verlagerungen")}>
+            <Link href="?section=verlagerungen" className={jumpLinkClass("verlagerungen")} onClick={handleJump("verlagerungen")}>
               Verlagerungen (#verlagerungen)
             </Link>
-            <Link href="?section=krisenmanagement" className={jumpLinkClass("krisenmanagement")}>
+            <Link href="?section=krisenmanagement" className={jumpLinkClass("krisenmanagement")} onClick={handleJump("krisenmanagement")}>
               Krisenmanagement (#krisenmanagement)
             </Link>
           </div>

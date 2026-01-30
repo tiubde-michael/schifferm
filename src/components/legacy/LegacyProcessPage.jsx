@@ -1,11 +1,9 @@
 "use client";
 
 import { useEffect } from "react";
-import { useSearchParams } from "next/navigation";
 import { sanitizeLegacyProcessHtml, extractLegacyBody } from "../../lib/legacyProcess";
 
 function LegacyProcessPage({ title, description, rawHtml }) {
-  const searchParams = useSearchParams();
   const sanitized = sanitizeLegacyProcessHtml(extractLegacyBody(rawHtml || ""));
 
   const scrollToSection = (section) => {
@@ -18,11 +16,13 @@ function LegacyProcessPage({ title, description, rawHtml }) {
   };
 
   useEffect(() => {
-    const section = searchParams?.get("section");
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const section = params.get("section");
     if (!section) return;
     const timeout = setTimeout(() => scrollToSection(section), 120);
     return () => clearTimeout(timeout);
-  }, [searchParams]);
+  }, []);
 
   const handleLegacyClick = (event) => {
     const anchor = event.target.closest?.("a");
