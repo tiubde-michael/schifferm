@@ -1,0 +1,67 @@
+Dipl.-Ing. Michael Schiffer, MBA
+
+Senior Program Manager und Prozessoptimierer mit 20+ Jahren Automotive/Industrie (Serienanlauf, globale Werksstrukturen). Seit 2025 Schwerpunkt: Generative AI, Healthcare Automation, Datenanalyse, KI-gestützte Prozessoptimierung und Telemedizin-Workflows.
+
+Location: Spremberg, Deutschland
+Email: Schiffer@TIUB.de
+Mobile: +49 172 25 6 42 48
+
+Keywords:
+Prozessoptimierung, Program Management, Serienanlauf, Lieferantenentwicklung, Generative AI, Healthcare Automation, RAG, n8n, Python, SQL, Telemedizin Workflows
+
+Core Domains:
+- Automotive- & Manufacturing Operations: Serienanlauf, globale Werke, Ausschussreduzierung, Lieferantenentwicklung, Relocations, Cost-Down
+- Healthcare Operations & Automation: klinische Dokumentations-Workflows, strukturierte Aufnahme/Frageboegen, Evaluation/Reporting, Telemedizin-Workflows
+- AI / Data / Workflow Engineering: RAG + Vector DBs, LLM-Workflows, Python+SQL Pipelines, lokale LLMs (Ollama/LM Studio), n8n
+
+Experience:
+- 1997–2010: Johnson Controls — Test Engineering, Electronics coordination, PMO, Plant leadership, Launch/Taskforce roles
+- Since 2010: The Implementers — Program management, supplier development, relocations, cost-down
+- Aug 2025: Implementierung KI-Auswertungen und Dokumentation im Krankenhaus — Implementierung KI-Auswertungen und Dokumentation im Krankenhaus
+
+Education:
+- 1995–1998: Dipl.-Ing. (FH) Maschinenbau, Rheinische FH Köln — Thesis: Versuchsstand ECE-R17 Kopfstützenprüfung.
+- 2001–2003: MBA International Management, UEL/ELBS London — Thesis: Successful Implementation of Kaizen.
+
+Representative Work Types:
+- A: KI-gestuetzte Auswertung & Dokumentation im Krankenhaus (implementiert, seit 2025) — Python/SQL/n8n/LLM workflows; outcomes: standardisierte Outputs, reduzierter manueller Aufwand, verbesserte Konsistenz
+- B: Strukturierte Patientenaufnahme & Workflow-Automation (aktiv) — n8n/SQL/LLM workflows; outcomes: strukturierte Intake-Daten, Routing-Logik, auswertungsfaehige Datensaetze
+- C: Serienanlauf / Programmmanagement (wiederkehrend) — program management methods; outcomes: stabile SOP, Qualitaets- und Lieferperformance, Risikominderung
+
+Certifications:
+- DGQ Auditor / Qualitätsmanager (Qualitätstechnik II) — DGQ — 1996
+- REFA-Grundschein – REFA-Sachbearbeiter — REFA-Verband — 1997
+- Six Sigma Black Belt — Johnson Controls — 2001
+- Wertstrom-Engineering — Fraunhofer IAO — 2012
+- Program & Launch Management (PMI / PLUS) — Program & Launch Management University — 2002
+- KMU-Fachberater Sanierung® — KMU-Akademie e.V. — 2010
+- Generative AI im Gesundheitswesen (Kursreihe) — Coursera — 2025
+- Healthcare Operations & Project Management (Kursreihe) — Coursera — 2025
+- Vector Databases for RAG — IBM — 2025
+- Build Intelligent Agents using DeepSeek & n8n — Board Infinity — 2025
+- MySQL for Data Engineering — Duke University — 2025
+- Python for Everybody (Modules) — University of Michigan — 2025
+- Deep Learning with PyTorch, Keras and TensorFlow — IBM — 2026
+
+Publications:
+- Diplomarbeit (Rheinische FH Koeln, 1998): Versuchsstand ECE-R17 Kopfstuetzenpruefung. (/docs/00-DIP-Inhalt.pdf)
+- MBA-Thesis (UEL/ELBS London, 2003): Successful Implementation of Kaizen. (/docs/Kaizen%20MR%20_Final.pdf)
+
+Diploma thesis PDF files:
+- /docs/00-DIP-Inhalt.pdf
+- /docs/01-DIP-Einleitung.pdf
+- /docs/02-DIP-Grundlagen.pdf
+- /docs/03-Dip-Entwurf-eines-Pendels.pdf
+- /docs/04-Dip-Entwurf-einer-linearen.pdf
+- /docs/05-Dip-Bestaetigung-der-Theorie.pdf
+- /docs/06-DIP-Ermittlung-der-Ko.pdf
+- /docs/07-Dip-Bewertung-der-beiden-Loes.pdf
+- /docs/08-DIP-Konstruktion-der-Posi.pdf
+- /docs/09-DIP-Steuerung.pdf
+- /docs/10-DIP-Bau-und-Inbetriebnahme.pdf
+- /docs/11-DIP-Ist%20kosten.pdf
+- /docs/12-DIP-Literaturn.pdf
+- /docs/13-DIP-Erklaerung.pdf
+- /docs/147-DIP-An_CFC%20600.pdf
+- /docs/148-DIP-An_Der-Lineare-Pruefstand.pdf
+

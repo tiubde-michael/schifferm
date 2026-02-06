@@ -4,7 +4,7 @@ function LogoMark({ className = "h-10 w-14" }) {
       className={className}
       viewBox="0 0 140 80"
       role="img"
-      aria-label="The Implementers Logo"
+      aria-label="Michael Schiffer Logo"
       xmlns="http://www.w3.org/2000/svg"
     >
       <polygon points="10,10 10,70 75,40" fill="#0066CC" />

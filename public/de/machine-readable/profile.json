@@ -1,0 +1,233 @@
+{
+  "name": "Dipl.-Ing. Michael Schiffer, MBA",
+  "location": "Spremberg, Deutschland",
+  "email": "Schiffer@TIUB.de",
+  "mobile": "+49 172 25 6 42 48",
+  "languages": [
+    {
+      "code": "de",
+      "label": "DE",
+      "level": "native"
+    },
+    {
+      "code": "en",
+      "label": "EN",
+      "level": "very good"
+    },
+    {
+      "code": "fr",
+      "label": "FR",
+      "level": "basic"
+    },
+    {
+      "code": "es",
+      "label": "ES",
+      "level": "basic"
+    },
+    {
+      "code": "pl",
+      "label": "PL",
+      "level": "basic"
+    }
+  ],
+  "headline": "Prozessoptimierung • Program Management • Generative AI • Healthcare Automation",
+  "oneLiner": "Senior Program Manager und Prozessoptimierer mit 20+ Jahren Automotive/Industrie (Serienanlauf, globale Werksstrukturen). Seit 2025 Schwerpunkt: Generative AI, Healthcare Automation, Datenanalyse, KI-gestützte Prozessoptimierung und Telemedizin-Workflows.",
+  "keywords": [
+    "Prozessoptimierung",
+    "Program Management",
+    "Serienanlauf",
+    "Lieferantenentwicklung",
+    "Generative AI",
+    "Healthcare Automation",
+    "RAG",
+    "n8n",
+    "Python",
+    "SQL",
+    "Telemedizin Workflows"
+  ],
+  "coreDomains": [
+    {
+      "title": "Automotive- & Manufacturing Operations",
+      "focus": [
+        "Serienanlauf",
+        "globale Werke",
+        "Ausschussreduzierung",
+        "Lieferantenentwicklung",
+        "Relocations",
+        "Cost-Down"
+      ]
+    },
+    {
+      "title": "Healthcare Operations & Automation",
+      "focus": [
+        "klinische Dokumentations-Workflows",
+        "strukturierte Aufnahme/Frageboegen",
+        "Evaluation/Reporting",
+        "Telemedizin-Workflows"
+      ]
+    },
+    {
+      "title": "AI / Data / Workflow Engineering",
+      "focus": [
+        "RAG + Vector DBs",
+        "LLM-Workflows",
+        "Python+SQL Pipelines",
+        "lokale LLMs (Ollama/LM Studio)",
+        "n8n"
+      ]
+    }
+  ],
+  "skills": {
+    "ai": [
+      "RAG",
+      "vector databases",
+      "LLM workflows",
+      "local LLMs (Ollama/LM Studio)",
+      "agent workflows"
+    ],
+    "automation": [
+      "n8n"
+    ],
+    "programming": [
+      "Python",
+      "C# (basic)",
+      "VB/VB.NET (basic)"
+    ],
+    "databases": [
+      "MySQL (basic)",
+      "Postgres (basic)"
+    ],
+    "ops": [
+      "SAP (basic)"
+    ],
+    "officePm": [
+      "Excel (very good)",
+      "MS Project (good)",
+      "PowerPoint (good)",
+      "Word (good)"
+    ],
+    "cad": [
+      "OnShape (good)",
+      "AutoCAD 3D (good)",
+      "CATIA V5 (basic)"
+    ]
+  },
+  "experience": [
+    {
+      "period": "1997–2010",
+      "title": "Johnson Controls",
+      "details": "Test Engineering, Electronics coordination, PMO, Plant leadership, Launch/Taskforce roles"
+    },
+    {
+      "period": "Since 2010",
+      "title": "The Implementers",
+      "details": "Program management, supplier development, relocations, cost-down"
+    },
+    {
+      "period": "Aug 2025",
+      "title": "Implementierung KI-Auswertungen und Dokumentation im Krankenhaus",
+      "details": "Implementierung KI-Auswertungen und Dokumentation im Krankenhaus"
+    }
+  ],
+  "education": [
+    {
+      "period": "1995–1998",
+      "title": "Dipl.-Ing. (FH) Maschinenbau, Rheinische FH Köln",
+      "details": "Thesis: Versuchsstand ECE-R17 Kopfstützenprüfung."
+    },
+    {
+      "period": "2001–2003",
+      "title": "MBA International Management, UEL/ELBS London",
+      "details": "Thesis: Successful Implementation of Kaizen."
+    }
+  ],
+  "workTypes": [
+    {
+      "id": "A",
+      "title": "KI-gestuetzte Auswertung & Dokumentation im Krankenhaus",
+      "status": "implementiert, seit 2025",
+      "stack": "Python/SQL/n8n/LLM workflows",
+      "outcomes": [
+        "standardisierte Outputs",
+        "reduzierter manueller Aufwand",
+        "verbesserte Konsistenz"
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Strukturierte Patientenaufnahme & Workflow-Automation",
+      "status": "aktiv",
+      "stack": "n8n/SQL/LLM workflows",
+      "outcomes": [
+        "strukturierte Intake-Daten",
+        "Routing-Logik",
+        "auswertungsfaehige Datensaetze"
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Serienanlauf / Programmmanagement",
+      "status": "wiederkehrend",
+      "stack": "program management methods",
+      "outcomes": [
+        "stabile SOP",
+        "Qualitaets- und Lieferperformance",
+        "Risikominderung"
+      ]
+    }
+  ],
+  "certifications": {
+    "quality": [
+      "DGQ Auditor / Qualitätsmanager (Qualitätstechnik II) — DGQ — 1996",
+      "REFA-Grundschein – REFA-Sachbearbeiter — REFA-Verband — 1997",
+      "Six Sigma Black Belt — Johnson Controls — 2001",
+      "Wertstrom-Engineering — Fraunhofer IAO — 2012"
+    ],
+    "program": [
+      "Program & Launch Management (PMI / PLUS) — Program & Launch Management University — 2002",
+      "KMU-Fachberater Sanierung® — KMU-Akademie e.V. — 2010"
+    ],
+    "healthcare": [
+      "Generative AI im Gesundheitswesen (Kursreihe) — Coursera — 2025",
+      "Healthcare Operations & Project Management (Kursreihe) — Coursera — 2025"
+    ],
+    "aiData": [
+      "Vector Databases for RAG — IBM — 2025",
+      "Build Intelligent Agents using DeepSeek & n8n — Board Infinity — 2025",
+      "MySQL for Data Engineering — Duke University — 2025",
+      "Python for Everybody (Modules) — University of Michigan — 2025",
+      "Deep Learning with PyTorch, Keras and TensorFlow — IBM — 2026"
+    ]
+  },
+  "publications": [
+    {
+      "title": "Diplomarbeit (Rheinische FH Koeln, 1998): Versuchsstand ECE-R17 Kopfstuetzenpruefung.",
+      "file": "/docs/00-DIP-Inhalt.pdf"
+    },
+    {
+      "title": "MBA-Thesis (UEL/ELBS London, 2003): Successful Implementation of Kaizen.",
+      "file": "/docs/Kaizen%20MR%20_Final.pdf"
+    }
+  ],
+  "diplomaFiles": [
+    "/docs/00-DIP-Inhalt.pdf",
+    "/docs/01-DIP-Einleitung.pdf",
+    "/docs/02-DIP-Grundlagen.pdf",
+    "/docs/03-Dip-Entwurf-eines-Pendels.pdf",
+    "/docs/04-Dip-Entwurf-einer-linearen.pdf",
+    "/docs/05-Dip-Bestaetigung-der-Theorie.pdf",
+    "/docs/06-DIP-Ermittlung-der-Ko.pdf",
+    "/docs/07-Dip-Bewertung-der-beiden-Loes.pdf",
+    "/docs/08-DIP-Konstruktion-der-Posi.pdf",
+    "/docs/09-DIP-Steuerung.pdf",
+    "/docs/10-DIP-Bau-und-Inbetriebnahme.pdf",
+    "/docs/11-DIP-Ist%20kosten.pdf",
+    "/docs/12-DIP-Literaturn.pdf",
+    "/docs/13-DIP-Erklaerung.pdf",
+    "/docs/147-DIP-An_CFC%20600.pdf",
+    "/docs/148-DIP-An_Der-Lineare-Pruefstand.pdf"
+  ],
+  "sameAs": [
+    "https://the-implementers.de"
+  ]
+}

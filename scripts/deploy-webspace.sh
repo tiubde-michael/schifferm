@@ -3,15 +3,15 @@ set -e
 
 if [ -z "${IONOS_SFTP_PASS:-}" ]; then
   echo "Missing IONOS_SFTP_PASS. Example:"
-  echo "  IONOS_SFTP_PASS='your-password' NEXT_PUBLIC_SITE_URL='https://the-implementers.de' ./scripts/deploy-webspace.sh"
+  echo "  IONOS_SFTP_PASS='your-password' NEXT_PUBLIC_SITE_URL='https://schifferm.de' ./scripts/deploy-webspace.sh"
   exit 1
 fi
 
 HOST="home436434446.1and1-data.host"
 USER="u70724527"
-REMOTE_DIR="/the-implementers.de"
+REMOTE_DIR="/schifferm.de"
 
-NEXT_PUBLIC_SITE_URL="${NEXT_PUBLIC_SITE_URL:-https://the-implementers.de}"
+NEXT_PUBLIC_SITE_URL="${NEXT_PUBLIC_SITE_URL:-https://schifferm.de}"
 export NEXT_PUBLIC_SITE_URL
 
 echo "Building static site..."

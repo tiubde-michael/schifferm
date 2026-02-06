@@ -1,113 +1,70 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import LogoMark from "./LogoMark";
-
-const navLinks = [
-  { label: "Home", to: "/" },
-  { label: "Recorder", to: "/Recorder" },
-  { label: "Über uns", to: "/", anchor: "about" },
-  { label: "Blog", to: "/blog" },
-  { label: "Kontakt", to: "/kontakt" },
-];
-
-const serviceLinks = [
-  { label: "Lokale LLMs & RAG", to: "/leistungen/lokale-llms" },
-  { label: "Projektmanagement", to: "/leistungen/projektmanagement" },
-  { label: "Prozessoptimierung", to: "/leistungen/prozessoptimierung" },
-];
-
-const bookingUrl = "https://outlook.office.com/book/KIOE@tiub.onmicrosoft.com/";
+import { labels } from "../lib/i18n";
 
 const linkClasses = (isActive) =>
   `text-sm font-medium transition hover:text-implementers-blue ${isActive ? "text-implementers-blue" : "text-slate-700"}`;
 
+const getLocaleFromPath = (pathname) => (pathname?.startsWith("/en") ? "en" : "de");
+
+const buildNav = (lang) => {
+  const nav = labels[lang].navigation;
+  return [
+    { label: nav.home, href: `/${lang}` },
+    { label: nav.profile, href: `/${lang}/profile` },
+    { label: nav.skills, href: `/${lang}/skills` },
+    { label: nav.projects, href: `/${lang}/projects` },
+    { label: nav.certifications, href: `/${lang}/certifications` },
+    { label: nav.publications, href: `/${lang}/publications` },
+    { label: nav.machineReadable, href: `/${lang}/machine-readable` },
+  ];
+};
+
+const buildLanguageHref = (pathname, targetLang) => {
+  if (!pathname) return `/${targetLang}`;
+  if (pathname.startsWith("/de")) return pathname.replace("/de", `/${targetLang}`);
+  if (pathname.startsWith("/en")) return pathname.replace("/en", `/${targetLang}`);
+  return `/${targetLang}`;
+};
+
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
   const pathname = usePathname();
-
-  const handleAnchorClick = (event, anchor) => {
-    setMenuOpen(false);
-    if (!anchor) return;
-    if (pathname !== "/") return;
-    event.preventDefault();
-    setTimeout(() => {
-      const element = document.getElementById(anchor);
-      if (element) element.scrollIntoView({ behavior: "smooth" });
-    }, 80);
-  };
+  const lang = getLocaleFromPath(pathname);
+  const navLinks = buildNav(lang);
+  const toggleLang = lang === "de" ? "en" : "de";
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-lg">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:py-4">
-        <Link href="/" className="flex items-center gap-3">
+        <Link href={`/${lang}`} className="flex items-center gap-3">
           <LogoMark />
           <div className="leading-tight">
-            <div className="text-sm font-semibold text-slate-900">The Implementers GmbH</div>
-            <div className="text-xs text-slate-500">Tradition trifft KI-Praxis</div>
+            <div className="text-sm font-semibold text-slate-900">Michael Schiffer</div>
+            <div className="text-xs text-slate-500">AI-first Professional Authority</div>
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-6 lg:flex">
+        <nav className="hidden items-center gap-5 lg:flex">
           {navLinks.map((item) => {
-            const href = item.anchor ? `/#${item.anchor}` : item.to;
-            const isActive = item.to === "/" ? pathname === "/" : pathname.startsWith(item.to);
+            const isActive = pathname === item.href || pathname?.startsWith(`${item.href}/`);
             return (
-              <Link
-                key={item.label}
-                href={href}
-                className={linkClasses(isActive)}
-                onClick={(event) => handleAnchorClick(event, item.anchor)}
-              >
+              <Link key={item.href} href={item.href} className={linkClasses(isActive)}>
                 {item.label}
               </Link>
             );
           })}
-
-          <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-            <button
-              className="flex items-center gap-1 text-sm font-medium text-slate-700 transition hover:text-implementers-blue"
-              onClick={() => setServicesOpen((prev) => !prev)}
-              type="button"
-            >
-              Leistungen
-              <ChevronDown className="h-4 w-4" />
-            </button>
-            {servicesOpen && (
-              <div className="absolute right-0 top-full z-50 pt-3">
-                <div className="w-56 rounded-lg border border-slate-200 bg-white p-2 shadow-xl">
-                  {serviceLinks.map((item) => {
-                    const isActive = pathname.startsWith(item.to);
-                    return (
-                      <Link
-                        key={item.to}
-                        href={item.to}
-                        onClick={() => setServicesOpen(false)}
-                        className={`block rounded-md px-3 py-2 text-sm font-medium transition hover:bg-slate-50 ${
-                          isActive ? "text-implementers-blue" : "text-slate-700"
-                        }`}
-                      >
-                        {item.label}
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-          </div>
-
-          <a
-            href={bookingUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-full bg-implementers-blue px-4 py-2 text-sm font-semibold text-white shadow-glow-green transition hover:-translate-y-0.5 hover:bg-implementers-green"
+          <Link
+            href={buildLanguageHref(pathname, toggleLang)}
+            className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-slate-600 transition hover:border-implementers-blue hover:text-implementers-blue"
           >
-            Beratung buchen
-          </a>
+            {toggleLang.toUpperCase()}
+          </Link>
         </nav>
 
         <button
@@ -124,47 +81,25 @@ function Header() {
         <div className="lg:hidden">
           <div className="space-y-2 border-t border-slate-200 bg-white px-4 py-3">
             {navLinks.map((item) => {
-              const href = item.anchor ? `/#${item.anchor}` : item.to;
-              const isActive = item.to === "/" ? pathname === "/" : pathname.startsWith(item.to);
+              const isActive = pathname === item.href || pathname?.startsWith(`${item.href}/`);
               return (
                 <Link
-                  key={item.label}
-                  href={href}
+                  key={item.href}
+                  href={item.href}
                   className={linkClasses(isActive)}
-                  onClick={(event) => handleAnchorClick(event, item.anchor)}
+                  onClick={() => setMenuOpen(false)}
                 >
                   {item.label}
                 </Link>
               );
             })}
-            <div className="pt-2">
-              <div className="text-xs font-semibold uppercase text-slate-400">Leistungen</div>
-              <div className="mt-1 space-y-1">
-                {serviceLinks.map((item) => {
-                  const isActive = pathname.startsWith(item.to);
-                  return (
-                    <Link
-                      key={item.to}
-                      href={item.to}
-                      className={`block rounded-md px-2 py-2 text-sm font-medium transition hover:bg-slate-50 ${
-                        isActive ? "text-implementers-blue" : "text-slate-700"
-                      }`}
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
-            <a
-              href={bookingUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-implementers-blue px-4 py-2 text-sm font-semibold text-white shadow-glow-green transition hover:bg-implementers-green"
+            <Link
+              href={buildLanguageHref(pathname, toggleLang)}
+              className="mt-2 inline-flex w-full items-center justify-center rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-slate-600"
+              onClick={() => setMenuOpen(false)}
             >
-              Beratung buchen
-            </a>
+              {toggleLang.toUpperCase()}
+            </Link>
           </div>
         </div>
       )}

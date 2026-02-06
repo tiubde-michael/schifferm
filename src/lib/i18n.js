@@ -1,0 +1,56 @@
+export const labels = {
+  de: {
+    navigation: {
+      home: "Start",
+      profile: "Profil",
+      skills: "Skills",
+      projects: "Projekte",
+      certifications: "Zertifikate",
+      publications: "Publikationen",
+      machineReadable: "Machine-Readable",
+    },
+    sections: {
+      coreDomains: "Kernbereiche",
+      contact: "Kontakt",
+      experience: "Erfahrung",
+      education: "Ausbildung",
+      languages: "Sprachen",
+      skills: "Kompetenzen",
+      workTypes: "Representative Work Types",
+      certifications: "Zertifikate",
+      publications: "Publikationen",
+      machineReadable: "Machine-Readable Endpoints",
+      diplomaFiles: "Diplomarbeit PDF-Dateien",
+    },
+    cta: {
+      email: "E-Mail senden",
+    },
+  },
+  en: {
+    navigation: {
+      home: "Home",
+      profile: "Profile",
+      skills: "Skills",
+      projects: "Projects",
+      certifications: "Certifications",
+      publications: "Publications",
+      machineReadable: "Machine-Readable",
+    },
+    sections: {
+      coreDomains: "Core Domains",
+      contact: "Contact",
+      experience: "Experience",
+      education: "Education",
+      languages: "Languages",
+      skills: "Skills",
+      workTypes: "Representative Work Types",
+      certifications: "Certifications",
+      publications: "Publications",
+      machineReadable: "Machine-Readable Endpoints",
+      diplomaFiles: "Diploma thesis PDF files",
+    },
+    cta: {
+      email: "Send email",
+    },
+  },
+};

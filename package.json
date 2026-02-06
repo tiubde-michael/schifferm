@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "prebuild": "node scripts/generate-machine-readable.mjs",
     "dev": "next dev",
     "build": "next build",
     "export": "next build",
@@ -11,6 +12,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@swc/helpers": "^0.5.18",
     "idb": "^8.0.3",
     "lucide-react": "^0.562.0",
     "next": "latest",

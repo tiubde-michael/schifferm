@@ -1,11 +1,7 @@
-import Home from "../components/pages/Home";
+import { redirect } from "next/navigation";
 
-export const metadata = {
-  title: "The Implementers GmbH | Traditionelle Expertise trifft auf KI-Innovation",
-  description:
-    "Wir verbinden bewährte Beratungsmethoden mit modernen KI-Agenten und Sprachagenten. DSGVO-konforme LLM-Lösungen, Prozessoptimierung und Projektmanagement aus einer Hand.",
-};
+export const dynamic = "force-static";
 
-export default function Page() {
-  return <Home />;
+export default function RootRedirect() {
+  redirect("/de");
 }
