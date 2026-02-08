@@ -1,3 +1,9 @@
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .md .txt .json .xml
+AddType text/markdown .md
+AddType text/plain .txt
+AddType application/json .json
+
 RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.html$ - [L]
