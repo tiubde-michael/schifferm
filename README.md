@@ -38,15 +38,16 @@ npm run build
 
 ## Deployment (IONOS Webspace / 1&1)
 
-Target folder: `/schifferm.de` on server `home436434446.1and1-data.host` (user `u70724527`).
+Target server: `home436434446.1and1-data.host` using env user `IONOS_SFTP_USER_SCHIFFERM_WEBSEITE`.
 
 1. `npm run build` (outputs `out/`)
-2. Upload the contents of `out/` to `/schifferm.de`
+2. Upload the contents of `out/` with `sh ./scripts/deploy-webspace.sh`
 
 Set:
 
 ```bash
 NEXT_PUBLIC_SITE_URL=https://schifferm.de
+IONOS_SFTP_USER_SCHIFFERM_WEBSEITE=...
 ```
 
 ## Key Routes
