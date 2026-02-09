@@ -27,7 +27,7 @@ export default function ImpressumPage() {
       <div className="mb-10">
         <p className="text-xs font-semibold uppercase tracking-wide text-implementers-blue">Rechtliches</p>
         <h1 className="mt-2 font-heading text-3xl text-slate-900">Impressum</h1>
-        <p className="mt-3 text-base text-slate-700">Angaben gemaess 5 TMG und 18 Abs. 2 MStV.</p>
+        <p className="mt-3 text-base text-slate-700">Angaben gemaess § 5 DDG.</p>
       </div>
 
       <div className="space-y-8 text-sm text-slate-700">
@@ -44,9 +44,6 @@ export default function ImpressumPage() {
           <p className="mt-2">
             E-Mail: <a href="mailto:schiffer@tiub.de">schiffer@tiub.de</a>
           </p>
-          <p>
-            Telefon: <a href="tel:+491722564248">+49 172 2564248</a>
-          </p>
         </section>
 
         <section>
@@ -55,15 +52,6 @@ export default function ImpressumPage() {
           <p>Weberweg 3</p>
           <p>03130 Spremberg</p>
           <p>Deutschland</p>
-        </section>
-
-        <section>
-          <h2 className="text-base font-semibold text-slate-900">Hinweise</h2>
-          <p className="mt-2">
-            Diese Website dient der Vorstellung eines professionellen Profils und enthaelt keine
-            kommerziellen Bestell- oder Zahlungsfunktionen.
-          </p>
-          <p className="mt-2">Eine Umsatzsteuer-Identifikationsnummer ist nicht vorhanden.</p>
         </section>
       </div>
     </section>

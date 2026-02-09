@@ -6,6 +6,11 @@ AddType application/json .json
 
 RewriteEngine On
 RewriteBase /
+
+# IHHT area is permanently removed
+ErrorDocument 410 /410-gone.html
+RewriteRule ^(ihht|de/ihht|en/ihht)(/.*)?$ - [G,L,NC]
+
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

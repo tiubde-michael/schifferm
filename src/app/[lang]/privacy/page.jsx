@@ -42,63 +42,49 @@ export default function PrivacyPage() {
           <p className="mt-2">
             Email: <a href="mailto:schiffer@tiub.de">schiffer@tiub.de</a>
           </p>
-          <p>
-            Phone: <a href="tel:+491722564248">+49 172 2564248</a>
-          </p>
         </section>
 
         <section>
-          <h2 className="text-base font-semibold text-slate-900">2. Hosting</h2>
+          <h2 className="text-base font-semibold text-slate-900">2. Hosting and server log files</h2>
           <p className="mt-2">
-            This website is hosted by IONOS SE. When you access the site, the hosting provider processes technical
-            access data (server log files). The legal basis is Art. 6(1)(f) GDPR (legitimate interest in secure and
-            stable operation).
+            This website is operated by a technical hosting provider (e.g. IONOS). When the website is accessed,
+            technically required server log data is processed, including IP address, date and time, requested page,
+            transferred data volume, status code, browser details, operating system and referrer URL.
           </p>
-        </section>
-
-        <section>
-          <h2 className="text-base font-semibold text-slate-900">3. Access data</h2>
           <p className="mt-2">
-            Typical access data includes IP address, date and time, requested page, referrer URL, transferred data
-            volume, status codes, and user agent. These data are not combined with other data sources.
+            Processing is carried out to provide the website, ensure system security and perform error analysis.
+            The legal basis is Art. 6(1)(f) GDPR.
           </p>
         </section>
 
         <section>
-          <h2 className="text-base font-semibold text-slate-900">4. Contact</h2>
+          <h2 className="text-base font-semibold text-slate-900">3. Contact by email</h2>
           <p className="mt-2">
-            If you contact us by email or phone, the transmitted data is used to handle your request. The legal basis
-            is Art. 6(1)(b) GDPR (pre-contractual measures) and Art. 6(1)(f) GDPR (legitimate interest in responding).
+            If you contact us by email, the transmitted data is processed to handle your request.
+            The legal basis is Art. 6(1)(b) GDPR where applicable, otherwise Art. 6(1)(f) GDPR.
           </p>
         </section>
 
         <section>
-          <h2 className="text-base font-semibold text-slate-900">5. Cookies and tracking</h2>
-          <p className="mt-2">This website does not use cookies for analytics or marketing and uses no tracking tools.</p>
-        </section>
-
-        <section>
-          <h2 className="text-base font-semibold text-slate-900">6. Your rights</h2>
+          <h2 className="text-base font-semibold text-slate-900">4. No tracking and no third-party plugins</h2>
           <p className="mt-2">
-            You have the right of access, rectification, erasure, restriction of processing, objection, and data
-            portability. You also have the right to lodge a complaint with a supervisory authority.
+            This website uses no tracking, no analytics services, no social media plugins,
+            no YouTube plugins and no consent-based marketing cookies.
           </p>
         </section>
 
         <section>
-          <h2 className="text-base font-semibold text-slate-900">7. Security</h2>
+          <h2 className="text-base font-semibold text-slate-900">5. Your rights</h2>
           <p className="mt-2">
-            Transmission is encrypted (TLS). Complete protection of data against access by third parties cannot be
-            guaranteed.
+            Under the GDPR you have the right of access, rectification, erasure, restriction of processing,
+            data portability, objection, withdrawal of consent and the right to lodge a complaint with a
+            supervisory authority.
           </p>
         </section>
 
         <section>
-          <h2 className="text-base font-semibold text-slate-900">8. External links</h2>
-          <p className="mt-2">
-            This website may contain links to external sites. Their content and privacy practices are the
-            responsibility of the respective provider.
-          </p>
+          <h2 className="text-base font-semibold text-slate-900">6. Version date</h2>
+          <p className="mt-2">Version date: February 9, 2026</p>
         </section>
       </div>
     </section>

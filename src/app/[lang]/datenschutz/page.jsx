@@ -42,69 +42,58 @@ export default function DatenschutzPage() {
           <p className="mt-2">
             E-Mail: <a href="mailto:schiffer@tiub.de">schiffer@tiub.de</a>
           </p>
-          <p>
-            Telefon: <a href="tel:+491722564248">+49 172 2564248</a>
+        </section>
+
+        <section>
+          <h2 className="text-base font-semibold text-slate-900">2. Hosting und Server-Logfiles</h2>
+          <p className="mt-2">
+            Diese Website wird bei einem technischen Hosting-Dienstleister betrieben (z. B. IONOS). Beim Aufruf der
+            Website werden technisch notwendige Server-Logdaten verarbeitet, insbesondere IP-Adresse, Datum und Uhrzeit,
+            aufgerufene Seite oder Datei, uebertragene Datenmenge, Statuscode, Browsertyp, Browserversion,
+            Betriebssystem und Referrer-URL.
+          </p>
+          <p className="mt-2">
+            Die Verarbeitung erfolgt zur Bereitstellung der Website, zur Gewaehrleistung der Systemsicherheit und zur
+            Fehleranalyse. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.
           </p>
         </section>
 
         <section>
-          <h2 className="text-base font-semibold text-slate-900">2. Hosting</h2>
+          <h2 className="text-base font-semibold text-slate-900">3. Kontakt per E-Mail</h2>
           <p className="mt-2">
-            Diese Website wird bei IONOS SE gehostet. Beim Aufruf der Seiten verarbeitet der Host
-            technische Zugriffsdaten (Server-Logfiles). Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO
-            (berechtigtes Interesse an einem sicheren und stabilen Betrieb).
+            Bei Kontaktaufnahme per E-Mail werden die uebermittelten Daten zur Bearbeitung der Anfrage verarbeitet.
+            Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit die Anfrage auf ein Vertragsverhaeltnis abzielt,
+            ansonsten Art. 6 Abs. 1 lit. f DSGVO.
           </p>
         </section>
 
         <section>
-          <h2 className="text-base font-semibold text-slate-900">3. Zugriffsdaten</h2>
+          <h2 className="text-base font-semibold text-slate-900">4. Keine Tracking- und Drittanbieter-Dienste</h2>
           <p className="mt-2">
-            Beim Besuch der Website werden ueblicherweise folgende Daten verarbeitet: IP-Adresse, Datum und Uhrzeit,
-            aufgerufene Seite, Referrer-URL, uebertragene Datenmenge, Statuscodes und User-Agent.
-            Eine Zusammenfuehrung dieser Daten mit anderen Datenquellen erfolgt nicht.
+            Diese Website nutzt kein Tracking, keine Analyse-Dienste, keine Social-Media-Plugins,
+            keine YouTube-Plugins und keine einwilligungspflichtigen Marketing-Cookies.
           </p>
         </section>
 
         <section>
-          <h2 className="text-base font-semibold text-slate-900">4. Kontaktaufnahme</h2>
+          <h2 className="text-base font-semibold text-slate-900">5. Ihre Rechte</h2>
           <p className="mt-2">
-            Bei Kontaktaufnahme per E-Mail oder Telefon werden die uebermittelten Daten zur Bearbeitung der Anfrage
-            verwendet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Massnahmen) sowie
-            Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung).
+            Sie haben nach der DSGVO das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Loeschung (Art. 17),
+            Einschraenkung der Verarbeitung (Art. 18), Datenuebertragbarkeit (Art. 20), Widerspruch (Art. 21)
+            sowie Widerruf erteilter Einwilligungen mit Wirkung fuer die Zukunft (Art. 7 Abs. 3).
           </p>
         </section>
 
         <section>
-          <h2 className="text-base font-semibold text-slate-900">5. Cookies und Tracking</h2>
+          <h2 className="text-base font-semibold text-slate-900">6. Beschwerderecht</h2>
           <p className="mt-2">
-            Diese Website setzt keine Cookies zu Analyse- oder Marketingzwecken ein und verwendet keine
-            Tracking-Dienste.
+            Sie haben das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehoerde (Art. 77 DSGVO).
           </p>
         </section>
 
         <section>
-          <h2 className="text-base font-semibold text-slate-900">6. Ihre Rechte</h2>
-          <p className="mt-2">
-            Sie haben das Recht auf Auskunft, Berichtigung, Loeschung, Einschraenkung der Verarbeitung,
-            Widerspruch sowie Datenuebertragbarkeit. Zudem besteht ein Beschwerderecht bei der zustaendigen
-            Aufsichtsbehoerde.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-base font-semibold text-slate-900">7. Sicherheit</h2>
-          <p className="mt-2">
-            Die Uebertragung erfolgt verschluesselt (TLS). Ein vollstaendiger Schutz der Daten vor dem Zugriff durch
-            Dritte ist jedoch nicht moeglich.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-base font-semibold text-slate-900">8. Externe Links</h2>
-          <p className="mt-2">
-            Diese Website kann Links zu externen Seiten enthalten. Fuer deren Inhalte und Datenschutzpraktiken ist
-            der jeweilige Anbieter verantwortlich.
-          </p>
+          <h2 className="text-base font-semibold text-slate-900">7. Stand</h2>
+          <p className="mt-2">Stand: 9. Februar 2026</p>
         </section>
       </div>
     </section>

@@ -44,5 +44,10 @@ echo "Uploading to ${USER}@${HOST}:${REMOTE_DIR} ..."
 SSH_ASKPASS="${ASKPASS}" SSH_ASKPASS_REQUIRE=force DISPLAY=:0 \
   setsid -w scp -r -o StrictHostKeyChecking=no out/* "${USER}@${HOST}:${REMOTE_DIR%/}/"
 
+if [ -f ".htaccess" ]; then
+  SSH_ASKPASS="${ASKPASS}" SSH_ASKPASS_REQUIRE=force DISPLAY=:0 \
+    setsid -w scp -o StrictHostKeyChecking=no .htaccess "${USER}@${HOST}:${REMOTE_DIR%/}/.htaccess"
+fi
+
 rm -f "${ASKPASS}"
 echo "Done."
