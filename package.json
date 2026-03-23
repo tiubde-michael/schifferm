@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "prebuild": "node scripts/generate-machine-readable.mjs",
+    "prebuild": "python3 scripts/generate-career-formats.py && node scripts/generate-machine-readable.mjs",
     "dev": "next dev",
     "build": "next build",
     "export": "next build",

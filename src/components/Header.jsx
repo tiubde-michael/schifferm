@@ -21,6 +21,7 @@ const buildNav = (lang) => {
     { label: nav.projects, href: `/${lang}/projects` },
     { label: nav.certifications, href: `/${lang}/certifications` },
     { label: nav.publications, href: `/${lang}/publications` },
+    { label: nav.career, href: `/${lang}/career` },
     { label: nav.machineReadable, href: `/${lang}/machine-readable` },
   ];
 };

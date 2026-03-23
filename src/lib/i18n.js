@@ -8,6 +8,7 @@ export const labels = {
       certifications: "Zertifikate",
       publications: "Publikationen",
       machineReadable: "Machine-Readable",
+      career: "Lebenslauf",
     },
     sections: {
       coreDomains: "Kernbereiche",
@@ -35,6 +36,7 @@ export const labels = {
       certifications: "Certifications",
       publications: "Publications",
       machineReadable: "Machine-Readable",
+      career: "Full CV",
     },
     sections: {
       coreDomains: "Core Domains",

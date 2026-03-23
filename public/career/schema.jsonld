@@ -1,0 +1,686 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dipl.-Ing. Michael Schiffer MBA",
+  "givenName": "Michael",
+  "familyName": "Schiffer",
+  "email": "mailto:Schiffer@TIUB.de",
+  "telephone": "+49 172 25 6 42 48",
+  "url": "https://www.schifferm.de",
+  "image": "https://schifferm.de/assets/michael-schiffer.jpg",
+  "jobTitle": "Senior Program Manager & Process Optimizer",
+  "description": "Process optimizer & Program Manager with 20+ years in automotive industry, production launches and global plant structures. Since 2025 increasingly focused on Generative AI, Healthcare Automation, data analysis, AI-driven process optimization and telemedicine workflows. Solid expertise in Python, MySQL, RAG architectures, AI automation (local LLM, local agents) and healthcare operations.",
+  "birthDate": "1972-04-14",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Letmathe"
+  },
+  "nationality": {
+    "@type": "Country",
+    "name": "Germany"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Weberweg 3",
+    "postalCode": "03130",
+    "addressLocality": "Spremberg",
+    "addressCountry": "DE"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/michael-schiffer",
+    "https://the-implementers.de",
+    "https://x.com/SchifferMichael"
+  ],
+  "hasOccupation": [
+    {
+      "@type": "Role",
+      "roleName": "Principal Consultant / Managing Director",
+      "startDate": "2010-01",
+      "endDate": "",
+      "description": "Consulting and interim management in the automotive industry, healthcare and other sectors. Focus areas: program management, production launches, plant management, supplier development, cost reduction, process optimization, AI implementation and AI-driven process automation.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "The Implementers GmbH"
+      }
+    },
+    {
+      "@type": "Role",
+      "roleName": "Program Manager Insolvent Suppliers",
+      "startDate": "2009-07",
+      "endDate": "2010-06",
+      "description": "Leading a cross functional team for transfer and relocation of various tools and processes incl. painted parts. This includes supplier development in Valencia for the Ford C344 Launch.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Johnson Controls"
+      }
+    },
+    {
+      "@type": "Role",
+      "roleName": "Program Manager",
+      "startDate": "2007-12",
+      "endDate": "2009-06",
+      "description": "Leading a simultaneous development team based in Bratislava till the successful Launch for the Hyundai Kia in Slovakia, Czech Republic and Germany. With the responsibility for profit, timing, quality and customer satisfaction.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Johnson Controls"
+      }
+    },
+    {
+      "@type": "Role",
+      "roleName": "Operations Manager (Crisis Management)",
+      "startDate": "2006-09",
+      "endDate": "2007-11",
+      "description": "Supporting a 408 people plant in crisis management with focus on production, technique, and launches and restructuring the supplier base with the focus on customer PPM, scrap and efficiency.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Johnson Controls"
+      }
+    },
+    {
+      "@type": "Role",
+      "roleName": "Operations Manager",
+      "startDate": "2006-01",
+      "endDate": "2007-11",
+      "description": "450 people automotive process and assembly plant for seating components and sunshades. Leading Operations (incl. production, methods, industrialization, quality and outbound logistic) with 80 employees and 12mil€/ano turnover, for Sunshades and seat back-panels with the focus on safety, scrap and efficiency.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Johnson Controls"
+      }
+    },
+    {
+      "@type": "Role",
+      "roleName": "Leader Taskforce \"Red Adair\"",
+      "startDate": "2005-08",
+      "endDate": "2005-12",
+      "description": "Leading a cross functional European team with the objective to stabilize a 250 people process and assembly plant before the closure with the focus on customer PPM, scrap and efficiency.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Johnson Controls"
+      }
+    },
+    {
+      "@type": "Role",
+      "roleName": "Technical & Launch Manager",
+      "startDate": "2003-09",
+      "endDate": "2005-08",
+      "description": "Leading and restructuring the departments Methods, Industrialization, Maintenance and Launch with 50 people in a 500 people automotive headliner plant.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Johnson Controls"
+      }
+    },
+    {
+      "@type": "Role",
+      "roleName": "Black Belt in Program Management Office",
+      "startDate": "2001-05",
+      "endDate": "2003-08",
+      "description": "Black Belt projects with focus on optimization of product development process and program management. Implementation of management information systems, PM trainings, change process optimization and development resource planning.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Johnson Controls"
+      }
+    },
+    {
+      "@type": "Role",
+      "roleName": "Project Engineer Electrical / Electronics",
+      "startDate": "2000-04",
+      "endDate": "2001-05",
+      "description": "Support of VW complete seat team with focus on the seat controller and all electrical and electronic components and wires harness routing incl. trouble shooting. Evaluation and test drives with and without customer with focus on seat function and comfort.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Johnson Controls"
+      }
+    },
+    {
+      "@type": "Role",
+      "roleName": "Test Engineer / Test Coordinator",
+      "startDate": "1998-02",
+      "endDate": "2000-04",
+      "description": "Building up new department \"Interior Testing\" incl. design and procurement of test machines. Creating test plans for various European vehicle interior projects, budget planning, supervising vibration measurements, durability tests and legal homologation tests. Extension of seating test lab to a full interiors system test lab (incl. FMVSS 201 FMH).",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Johnson Controls"
+      }
+    },
+    {
+      "@type": "Role",
+      "roleName": "Student in Testing",
+      "startDate": "1997-02",
+      "endDate": "1998-02",
+      "description": "Part time job: QM system support VDA6.1, QS9000, design of test fixtures, test execution and evaluation.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Johnson Controls"
+      }
+    },
+    {
+      "@type": "Role",
+      "roleName": "Backoffice Assistant – Management Consulting",
+      "startDate": "1997-01",
+      "endDate": "1998-01",
+      "description": "Prepare, format, and update presentations, proposals, and project documents. Assist with the preparation of reports, analyses, and workshop materials. Maintain and organize client and project data. Support invoicing, time tracking, and monthly reporting.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "UB Dr. Hans Schiffer"
+      }
+    }
+  ],
+  "alumniOf": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "UEL University of East London / ELBS London",
+      "location": "London, UK"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Rheinische Fachhochschule Köln",
+      "location": "Cologne, Germany"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Bonner Autohaus GmbH (Vertragswerkstatt der Daimler-Benz AG)",
+      "location": "Bonn, Germany"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Ernst-Moritz-Arndt-Gymnasium der Stadt Bonn",
+      "location": "Bonn, Germany"
+    }
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Introduction to Deep Learning & Neural Networks with Keras (IBM)",
+      "credentialCategory": "ai_data",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "IBM / Coursera"
+      },
+      "dateCreated": "2026-01"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Generative AI-Powered Solutions for Modern Healthcare (Specialization, 9 courses)",
+      "credentialCategory": "ai_healthcare",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Coursera"
+      },
+      "dateCreated": "2025-10"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Vector Databases for RAG",
+      "credentialCategory": "ai_data",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "IBM / Coursera"
+      },
+      "dateCreated": "2025-05"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Build Intelligent Agents using DeepSeek & N8N",
+      "credentialCategory": "ai_data",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Board Infinity / Coursera"
+      },
+      "dateCreated": "2025-05"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "MySQL for Data Engineering",
+      "credentialCategory": "ai_data",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Duke University / Coursera"
+      },
+      "dateCreated": "2025-05"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Python for Everybody (Specialization, 5 courses)",
+      "credentialCategory": "ai_data",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "University of Michigan / Coursera"
+      },
+      "dateCreated": "2025-03"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Google AI Essentials (Specialization, 5 courses)",
+      "credentialCategory": "ai_data",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Google / Coursera"
+      },
+      "dateCreated": "2025-12"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Google Prompting Essentials (Specialization, 4 courses)",
+      "credentialCategory": "ai_data",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Google / Coursera"
+      },
+      "dateCreated": "2025-12"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Introduction to AI (Google)",
+      "credentialCategory": "ai_data",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Google / Coursera"
+      },
+      "dateCreated": "2025-12"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Introduction to OpenAI Codex",
+      "credentialCategory": "ai_data",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Scrimba / Coursera"
+      },
+      "dateCreated": "2026-01"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Toyota Boshoku Business Practices (TBBP) - Solving Problems The TB Way",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Toyota Boshoku"
+      },
+      "dateCreated": "2025-10"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Value Stream Engineering (4 days)",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Fraunhofer IAO, Stuttgart"
+      },
+      "dateCreated": "2012-10"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Design and Process FMEA (5 days)",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Gabor Kulsar / Magna Steyr"
+      },
+      "dateCreated": "2013-11"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Advanced Workshop QM per DIN EN ISO 9001:2008",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "KMU-Berater Bundesverband / Gemeinschaft zertifizierter Unternehmensberater"
+      },
+      "dateCreated": "2013-02"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "JCI SixSigma Certified Black Belt",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Johnson Controls"
+      },
+      "dateCreated": "2001-01"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "EOQ Quality Systems Manager",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "EOQ / DGQ"
+      },
+      "dateCreated": "1996-01"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "DGQ-Quality Manager",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "DGQ Bonn"
+      },
+      "dateCreated": "1995-10"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Quality Techniques II",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "DGQ Bonn"
+      },
+      "dateCreated": "1996-04"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "DGQ-Auditor / Lead Auditor (DIN EN ISO 10011-2)",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "DGQ Bonn"
+      },
+      "dateCreated": "1996-05"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Internal Auditor of Quality Systems",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "DGQ"
+      },
+      "dateCreated": "1996-05"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Medical Device Act, EU Directives, CE Marking",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "MUS Fortbildungsseminar, Köln"
+      },
+      "dateCreated": "1996-10"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "EOQ Quality Auditor",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "EOQ / DGQ"
+      },
+      "dateCreated": "1996-06"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "VDA6.1 and QS9000 new demands to the Automotive Industry",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Technische Akademie Wuppertal (TAW)"
+      },
+      "dateCreated": "1997-05"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Training for internal Audits according to VDA6.1 and QS9000 and BOS",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "GFQ Akademie GmbH (firmeninternes Seminar bei Johnson Controls)"
+      },
+      "dateCreated": "1998-01"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Measurement device studies",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Johnson Controls (on-the-job)"
+      },
+      "dateCreated": "1998-01"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "REFA Basic Certificate",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "REFA-Verband Köln"
+      },
+      "dateCreated": "1996-09"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Work System Design",
+      "credentialCategory": "quality",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "REFA-Verband"
+      },
+      "dateCreated": "1996-11"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Certified Program Manager (PMU / JCI)",
+      "credentialCategory": "management",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Johnson Controls"
+      },
+      "dateCreated": "2002-07"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Certified SME Restructuring Consultant",
+      "credentialCategory": "management",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "KMU-Akademie e.V., Hamm"
+      },
+      "dateCreated": "2010-03"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Managing the company with key performance indicators",
+      "credentialCategory": "management",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "RKW Rationalisierungs-Kuratorium der Deutschen Wirtschaft e.V., Bayern Büro Nürnberg"
+      },
+      "dateCreated": "1996-10"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Strategy for Success (EKS Success Strategy)",
+      "credentialCategory": "management",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "KMU-Akademie e.V. / Cord Tepelmann, UnternehmerCoach"
+      },
+      "dateCreated": "2010-04"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Environmental Simulation of Vibration and Shock Loads (Shaker Course)",
+      "credentialCategory": "misc",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Technische Akademie Esslingen (TAE)"
+      },
+      "dateCreated": "1999-01"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Training in Test methods and procedures",
+      "credentialCategory": "misc",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Prince Automotive / Johnson Controls (on-the-job)"
+      },
+      "dateCreated": "1998-08"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "CANoe Hands-on Workshop (1 day)",
+      "credentialCategory": "misc",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Vector Informatik GmbH, Stuttgart"
+      },
+      "dateCreated": "2000-09"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "English in Management and International Business",
+      "credentialCategory": "misc",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": null
+      },
+      "dateCreated": "2001-02"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Internal trainings for project engineers - seats",
+      "credentialCategory": "misc",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Johnson Controls"
+      },
+      "dateCreated": "2000-01"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "TPG Microsoft Project Info Day",
+      "credentialCategory": "misc",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "TPG The Project Group"
+      },
+      "dateCreated": "2012-10"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "DVS Welding Courses: Gas Welding (G-Schw) and MAG Thin Sheet Welding (MAG-St D)",
+      "credentialCategory": "misc",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "DVS / Handwerkszentrum Bonn"
+      },
+      "dateCreated": "1993-04"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Data Protection 2012",
+      "credentialCategory": "misc",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Luther Rechtsanwaltsgesellschaft mbH"
+      },
+      "dateCreated": "2012-09"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "2x 3 days courses for Teambuilding",
+      "credentialCategory": "misc",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": null
+      },
+      "dateCreated": "1996-01"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Rhetoric and Communication (Diploma)",
+      "credentialCategory": "misc",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Institut für Rhetorik und Kommunikation, Bornheim bei Bonn"
+      },
+      "dateCreated": "1996-11"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "GDPR Live Webinar",
+      "credentialCategory": "misc",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "eRecht24"
+      },
+      "dateCreated": "2018-07"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Siemens NX Viewer / 3D Tool V12",
+      "credentialCategory": "misc",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "The Implementers GmbH (on-the-job)"
+      },
+      "dateCreated": "2017-11"
+    }
+  ],
+  "knowsAbout": [
+    "Access",
+    "AutoCAD 3D",
+    "BugZilla",
+    "C",
+    "C#",
+    "CATIA V5",
+    "Claude Code / Codex",
+    "DotProject",
+    "GPT-OS:20B / Qwen etc.",
+    "Linux",
+    "Lokale Telefonagenten / Local Phone Agents",
+    "Lotus 1-2-3",
+    "MS Excel",
+    "MS PowerPoint",
+    "MS Project",
+    "MS Word",
+    "Matrix One",
+    "MySQL",
+    "N8N",
+    "Ollama & LM Studio (lokale KI)",
+    "OnShape",
+    "Pascal",
+    "Postgres",
+    "Python",
+    "SAP",
+    "Sherpa",
+    "VB.NET",
+    "Visual Basic",
+    "Windows (bis 11)",
+    "eGroup",
+    "eRoom"
+  ],
+  "knowsLanguage": [
+    {
+      "@type": "Language",
+      "name": "German",
+      "alternateName": "Deutsch"
+    },
+    {
+      "@type": "Language",
+      "name": "English",
+      "alternateName": "Englisch"
+    },
+    {
+      "@type": "Language",
+      "name": "French",
+      "alternateName": "Französisch"
+    },
+    {
+      "@type": "Language",
+      "name": "Spanish",
+      "alternateName": "Spanisch"
+    },
+    {
+      "@type": "Language",
+      "name": "Polish",
+      "alternateName": "Polnisch"
+    }
+  ],
+  "award": [
+    "Pallas Athene Medal for final exam and best of term (1998)",
+    "Best of term for the education to a Car Mechanic (1995)"
+  ]
+}

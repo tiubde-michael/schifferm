@@ -1,0 +1,28 @@
+# Dipl.-Ing. Michael Schiffer MBA
+
+> Process optimizer & Program Manager with 20+ years in automotive industry, production launches and global plant structures. Since 2025 increasingly focused on Generative AI, Healthcare Automation, data analysis, AI-driven process optimization and telemedicine workflows. Solid expertise in Python, MySQL, RAG architectures, AI automation (local LLM, local agents) and healthcare operations.
+
+## Contact
+- Email: Schiffer@TIUB.de
+- Phone: +49 172 25 6 42 48
+- Location: Spremberg, Germany
+- Website: https://schifferm.de
+- LinkedIn: https://www.linkedin.com/in/michael-schiffer
+
+## Machine-Readable Formats
+
+Full career data (complete work history, projects, certifications, skills):
+- Markdown (DE): https://schifferm.de/career/de/profile.md
+- Markdown (EN): https://schifferm.de/career/en/profile.md
+- JSON Resume (DE): https://schifferm.de/career/de/profile.json
+- JSON Resume (EN): https://schifferm.de/career/en/profile.json
+- Schema.org JSON-LD: https://schifferm.de/career/schema.jsonld
+
+Curated profile summary:
+- JSON: https://schifferm.de/de/machine-readable/profile.json
+- Markdown: https://schifferm.de/de/machine-readable/profile.md
+- Plain text: https://schifferm.de/de/machine-readable/profile.txt
+
+## About This File
+This is an llms.txt file — a standard way to provide LLM-friendly content.
+See https://llmstxt.org for more information.

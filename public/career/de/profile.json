@@ -1,0 +1,580 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Dipl.-Ing. Michael Schiffer, MBA",
+    "label": "Prozessoptimierer & Program Manager mit 20+ Jahren Automobilindustrie, Serienanläufen und globalen Werksstrukturen. Seit 2025 verstärkt fokussiert auf Generative AI, Healthcare Automation, Datenanalyse, KI-gestützte Prozessoptimierung und Telemedizin-Workflows. Fundierte Kenntnisse in Python, MySQL, RAG-Architekturen, KI-Automatisierung (Lokale-LLM, Lokale-Agenten) und Healthcare-Operations.",
+    "email": "Schiffer@TIUB.de",
+    "phone": "+49 172 25 6 42 48",
+    "url": "https://www.schifferm.de",
+    "location": {
+      "address": "Weberweg 3",
+      "postalCode": "03130",
+      "city": "Spremberg",
+      "countryCode": "DE"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/michael-schiffer"
+      },
+      {
+        "network": "Website",
+        "url": "https://www.schifferm.de"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "The Implementers GmbH",
+      "position": "Berater / Geschäftsführer",
+      "startDate": "2010-01",
+      "endDate": "",
+      "summary": "Beratung / Interim Management",
+      "highlights": [
+        "Beratung und Interim Management in der Automobilindustrie, Healthcare und weiteren Branchen. Schwerpunkte: Programm Management, Serienanläufe, Werksleitung, Lieferantenentwicklung, Kostenreduzierung, Prozessoptimierung, KI-Implementierung und KI-gestützte Prozessautomatisierung.",
+        "Konzept Leistungsdokumentation Schmerztherapie: Konzept zur Leistungsdokumentation der Abteilung Schmerztherapie mit interdisziplinärer Eingabe und Abgleich mit OPS-Katalog.",
+        "Implementierung KI-Auswertungen und Dokumentation im Krankenhaus: Implementierung von KI-gestützten Auswertungen und Dokumentation im Krankenhaus.",
+        "Lieferantenentwicklung Fahrwerksteile (KTM): Lieferantenentwicklung Fahrwerksteile (Fließpressteile mit Drehen- und Fräsbearbeitung) inkl. Änderungen, Neuanläufen, Verlagerungen und Engpasssteuerung.",
+        "Verlagerung von 150 Fahrwerksteilen (KTM): Verlagerung von 150 Fahrwerksteilen in (Drehen- und Fräsbearbeitung) laufender Serie wg. kurzfristiger Standortschließung.",
+        "Prozessaufnahme und Prozessoptimierung (Von Roll Schweiz AG): Prozessaufnahme und Prozessoptimierung im internen Vertrieb eines international tätigen Schweizer Maschinenbauunternehmens.",
+        "Back Office Support und Prozessoptimierung (Praxis für Schmerztherapie & TCM, Baden-Baden): Laufende Unterstützung einer Privatpraxis für Schmerztherapie & TCM: Entwicklung von Narkoseprotokollen, Aufbau und Pflege der Webseite, Digitalisierung und Optimierung der Praxisprozesse.",
+        "Existenzgründungsberatung und Coaching (Praxis für Schmerztherapie & TCM, Baden-Baden): Existenzgründungsberatung und Coaching einer Privatpraxis für Schmerztherapie & TCM. Betreuung vom Konzept, Businessplan, Finanzierung, Terminverfolgung, Umbau und Einrichtung, Erstellen der Standardabläufe bis zur Implementierung einer Nachkalkulation.",
+        "Interim Werksleitung (MAO Automotive GmbH & Co): Interim Werksleitung und Stabilisierung bis zur Übergabe an einen neuen Werksleiter, in einem ungarischen Produktionswerk für KFZ Innenraum Teile. Schwerpunkte Kaschierprozesse inkl. WKZ-Optimierung, Personal Reduzierung, Engpasssteuerung und Rückstandsabbau.",
+        "Lieferantenentwicklung DAG BR238 Türverkleidung (Megatech Industries Deutschland GmbH): Führung des Teams zur Befähigung aller Lieferanten DAG BR238 Türverkleidung inkl. Musterungen, PPAP / EMPB Tracking, Engpasssteuerung und Prozessabnahmen.",
+        "Interim COO & Werksleiter (PWG Profilrollen-Werkzeugbau GmbH): Führung des Werkes in Deutschland und Ausbau des Werkes in der Slowakei bei einem Aluminium verarbeitenden KFZ-Zulieferer für Dachsysteme. Ca. 350 Mitarbeiter, ca. 80 Mio. EUR Umsatz.",
+        "Kostenreduzierung Dachhimmelproduktion (Motus Headliner GmbH): Kostenreduzierung (Prozess, Material, Lohn und Lieferanten) in der Produktion von Dachhimmeln.",
+        "Programm Management Türinnenverkleidung DAG C292 (Toyota Boshoku America): Führung eines interdisziplinären Teams zur Entwicklung vom Türinnenverkleidung DAG C292 inkl. der Industrialisierung in Deutschland und Verlagerung zum Serienanlauf in die USA.",
+        "KFZ Sonnenblenden Entwicklung (MARTUR FOMPAK): Beratung des jungen Projektteams in der Türkei zur Optimierung aktueller Sonnenblenden und Entwicklung der ersten neuen Aufträge inkl. Konzepten, Marktanalysen, Konstruktionsbesprechungen und Projektreviews.",
+        "Kostenreduzierung DAG C218 Türverkleidung (Toyota Boshoku Europe NV): Kostenreduzierung (Prozess, Material, Lohn und Lieferanten) bei der Türinnenverkleidung DAG C218.",
+        "Werkzeugverlagerung Spritzgusswerkzeuge (Toyota Boshoku Europe NV): Werkzeugverlagerung von Spritzgusswerkzeugen zu neuen Lieferanten in laufender Serie inkl. Musterungen, Verbauversuchen, Vorstellung beim OEM und Abstimmung der Bemusterungsumfänge (PPAP/EMPB) mit dem OEM und den Lieferanten.",
+        "Programm Management BMW Sonnenblenden (Magna): Führung eines interdisziplinären Teams zur Entwicklung und Produktionsverlagerung von Sonnenblenden. Neuentwicklung der BMW L7, F12 & F13, i8 und MCV-Sonnenblenden."
+      ]
+    },
+    {
+      "name": "Johnson Controls",
+      "position": "Program Manager Transfer Insolvente Lieferanten",
+      "startDate": "2009-07",
+      "endDate": "2010-06",
+      "summary": "Automobilindustriezulieferer",
+      "highlights": [
+        "Führung eines interdisziplinären, europäischen Teams zur Übernahme und Verlagerung von Umfängen aus Insolvenzen von verschiedenen Lieferanten für das Ford C344 Interieur Programm (Cockpit, Konsole, Säulen, Türverkleidungen) inkl. Änderungsmanagement und Bemusterung. Serienanlauf in Spanien."
+      ]
+    },
+    {
+      "name": "Johnson Controls",
+      "position": "Program Manager Hyundai/Kia",
+      "startDate": "2007-12",
+      "endDate": "2009-06",
+      "summary": "Automobilindustriezulieferer",
+      "highlights": [
+        "Führung eines interdisziplinären, europäischen Teams, Dienstsitz Bratislava, mit dem Ziel eines erfolgreichen Serienanlaufes der Hyundai i30 Türverkleidung unter Berücksichtigung von Profit, Qualität und Kundenzufriedenheit. Entwicklung und Produktion in SK, Kunde in CZ."
+      ]
+    },
+    {
+      "name": "Johnson Controls",
+      "position": "Leiter Technik und Produktion",
+      "startDate": "2006-09",
+      "endDate": "2007-11",
+      "summary": "Automobilindustriezulieferer",
+      "highlights": [
+        "Krisenmanagement. Interim Produktionsleitung in einem 300 MA-Werk zur Montage von Sonnenblenden sowie der Spritzgussfertigung aller Komponenten in Madrid."
+      ]
+    },
+    {
+      "name": "Johnson Controls",
+      "position": "Bereichsleiter",
+      "startDate": "2006-01",
+      "endDate": "2007-11",
+      "summary": "Automobilindustriezulieferer",
+      "highlights": [
+        "Führung des Produktionsbereiches Schiebehimmel (GMPUR) und Sitzlehnenverkleidungen (Naturfasern) mit ca. 80 Mitarbeitern ca. 12 Mil.€ Jahresumsatz, inkl. Fertigungstechnik, Qualitätssicherung, Produktionsplanung und Outbound-Logistik mit dem Ziel der Verbesserung der Wirtschaftlichkeit des Bereiches. Prozesswerk mit Montage in Deutschland."
+      ]
+    },
+    {
+      "name": "Johnson Controls",
+      "position": "Leiter Taskforce Ausschuss und Effizienz",
+      "startDate": "2005-08",
+      "endDate": "2005-12",
+      "summary": "Automobilindustriezulieferer",
+      "highlights": [
+        "Führung eines interdisziplinären europäischen Teams, mit dem Ziel der kurzfristigen Reduzierung des Ausschusses und Steigerung der Effizienz bis zur Schließung des Werkes. Dachhimmelwerk in England."
+      ]
+    },
+    {
+      "name": "Johnson Controls",
+      "position": "Technischer Leiter & Launch-Management",
+      "startDate": "2003-09",
+      "endDate": "2005-08",
+      "summary": "Automobilindustriezulieferer",
+      "highlights": [
+        "Führung und Umstrukturierung der Bereiche Launch Management, Arbeitsvorbereitung, Prozessoptimierung und Instandhaltung mit ca. 50 Mitarbeitern, mit dem Ziel der kurzfristigen und dauerhaften Reduzierung des Ausschusses und Steigerung der Effizienz. Dachhimmelwerk in Frankreich."
+      ]
+    },
+    {
+      "name": "Johnson Controls",
+      "position": "Black Belt / Program Management Office",
+      "startDate": "2001-05",
+      "endDate": "2003-08",
+      "summary": "Automobilindustriezulieferer",
+      "highlights": [
+        "Implementierung von Management-Informationssystemen, Vorbereitung und Durchführung von Projektmanagement-Trainings, Optimierung des Änderungsprozesses und Optimierung der Entwicklungs-Ressourcenplanung."
+      ]
+    },
+    {
+      "name": "Johnson Controls",
+      "position": "Projekt Engineer Electronics",
+      "startDate": "2000-04",
+      "endDate": "2001-05",
+      "summary": "Automobilindustriezulieferer",
+      "highlights": [
+        "Koordination der Elektrischen-, Elektronischen- und Softwareumfänge während der Sitzentwicklung inkl. Freigaben, Änderungsmanagement, Erprobungen und Serienanlaufbetreuung."
+      ]
+    },
+    {
+      "name": "Johnson Controls",
+      "position": "Test-Engineer / Testkoordinator",
+      "startDate": "1998-02",
+      "endDate": "2000-04",
+      "summary": "Automobilindustriezulieferer",
+      "highlights": [
+        "Aufbau eines neuen Bereiches „Versuch Interieur“ inkl. Konstruktion und Anschaffung von Prüfmaschinen. Erstellung von Testplänen für verschiedene europäische Fahrzeug-Innenraum-Projekte, Budgetplanung für diese Projekte und diesen Bereich, Betreuung von Versuchen wie z.B. Schwingungsuntersuchungen, Lebensdauertests und gesetzlich Homologations-Versuche."
+      ]
+    },
+    {
+      "name": "Johnson Controls",
+      "position": "Prüfmittelverantwortlicher / Werkstudent im Bereich Versuch",
+      "startDate": "1997-02",
+      "endDate": "1998-02",
+      "summary": "Automobilindustriezulieferer",
+      "highlights": [
+        "Betreuung des QM Systems VDA6.1, QS9000, Konstruktion Testvorrichtungen, Versuchsdurchführung und Auswertungen."
+      ]
+    },
+    {
+      "name": "UB Dr. Hans Schiffer",
+      "position": "Backoffice Assistant – Unternehmensberatung",
+      "startDate": "1997-01",
+      "endDate": "1998-01",
+      "summary": "Unternehmensberatung",
+      "highlights": [
+        "Erstellung und Formatierung von Präsentationen, Angeboten und Projektunterlagen. Vorbereitung von Berichten, Analysen und Workshop-Materialien. Pflege von Kunden- und Projektdaten. Unterstützung bei Rechnungsstellung, Zeiterfassung und monatlichem Reporting."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "UEL University of East London / ELBS London",
+      "area": "International Management",
+      "studyType": "MBA",
+      "startDate": "2001-09",
+      "endDate": "2003-11",
+      "score": "63",
+      "courses": []
+    },
+    {
+      "institution": "Rheinische Fachhochschule Köln",
+      "area": "Maschinenbau, Studienrichtung: Konstruktionstechnik",
+      "studyType": "Dipl.-Ing. (FH)",
+      "startDate": "1995-03",
+      "endDate": "1998-05",
+      "score": "1,3",
+      "courses": []
+    },
+    {
+      "institution": "Bonner Autohaus GmbH (Vertragswerkstatt der Daimler-Benz AG)",
+      "area": "Kfz-Mechanik",
+      "studyType": "Kfz-Mechaniker (Gesellenbrief)",
+      "startDate": "1992-10",
+      "endDate": "1995-01",
+      "score": null,
+      "courses": []
+    },
+    {
+      "institution": "Ernst-Moritz-Arndt-Gymnasium der Stadt Bonn",
+      "area": "Schwerpunkt Mathematik und Physik",
+      "studyType": "Abitur",
+      "startDate": "1988-06",
+      "endDate": "1991-06",
+      "score": "3,2",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Pallas Athene-Medaille für Diplomprüfung und Jahrgangsbester",
+      "date": "1998",
+      "awarder": ""
+    },
+    {
+      "title": "Jahrgangsbester der Kfz-Mechaniker-Ausbildung",
+      "date": "1995",
+      "awarder": ""
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Introduction to Deep Learning & Neural Networks with Keras (IBM)",
+      "issuer": "IBM / Coursera",
+      "date": "2026-01",
+      "url": ""
+    },
+    {
+      "name": "Generative AI-Powered Solutions for Modern Healthcare (Specialization, 9 Kurse)",
+      "issuer": "Coursera",
+      "date": "2025-10",
+      "url": ""
+    },
+    {
+      "name": "Vector Databases for RAG",
+      "issuer": "IBM / Coursera",
+      "date": "2025-05",
+      "url": ""
+    },
+    {
+      "name": "Build Intelligent Agents using DeepSeek & N8N",
+      "issuer": "Board Infinity / Coursera",
+      "date": "2025-05",
+      "url": ""
+    },
+    {
+      "name": "MySQL for Data Engineering",
+      "issuer": "Duke University / Coursera",
+      "date": "2025-05",
+      "url": ""
+    },
+    {
+      "name": "Python for Everybody (Specialization, 5 Kurse)",
+      "issuer": "University of Michigan / Coursera",
+      "date": "2025-03",
+      "url": ""
+    },
+    {
+      "name": "Google AI Essentials (Specialization, 5 Kurse)",
+      "issuer": "Google / Coursera",
+      "date": "2025-12",
+      "url": ""
+    },
+    {
+      "name": "Google Prompting Essentials (Specialization, 4 Kurse)",
+      "issuer": "Google / Coursera",
+      "date": "2025-12",
+      "url": ""
+    },
+    {
+      "name": "Introduction to AI (Google)",
+      "issuer": "Google / Coursera",
+      "date": "2025-12",
+      "url": ""
+    },
+    {
+      "name": "Introduction to OpenAI Codex",
+      "issuer": "Scrimba / Coursera",
+      "date": "2026-01",
+      "url": ""
+    },
+    {
+      "name": "Toyota Boshoku Business Practices (TBBP) - Solving Problems The TB Way",
+      "issuer": "Toyota Boshoku",
+      "date": "2025-10",
+      "url": ""
+    },
+    {
+      "name": "Wertstrom-Engineering (4 Tage)",
+      "issuer": "Fraunhofer IAO, Stuttgart",
+      "date": "2012-10",
+      "url": ""
+    },
+    {
+      "name": "DFMEA und PFMEA (5 Tage)",
+      "issuer": "Gabor Kulsar / Magna Steyr",
+      "date": "2013-11",
+      "url": ""
+    },
+    {
+      "name": "Vertiefungsworkshop QM nach DIN EN ISO 9001:2008",
+      "issuer": "KMU-Berater Bundesverband / Gemeinschaft zertifizierter Unternehmensberater",
+      "date": "2013-02",
+      "url": ""
+    },
+    {
+      "name": "SixSigma Zertifizierter Black Belt",
+      "issuer": "Johnson Controls",
+      "date": "2001-01",
+      "url": ""
+    },
+    {
+      "name": "EOQ Quality Systems Manager",
+      "issuer": "EOQ / DGQ",
+      "date": "1996-01",
+      "url": ""
+    },
+    {
+      "name": "DGQ-Qualitätsmanager",
+      "issuer": "DGQ Bonn",
+      "date": "1995-10",
+      "url": ""
+    },
+    {
+      "name": "Qualitätstechnik II",
+      "issuer": "DGQ Bonn",
+      "date": "1996-04",
+      "url": ""
+    },
+    {
+      "name": "DGQ-Auditor / Lead Auditor (DIN EN ISO 10011-2)",
+      "issuer": "DGQ Bonn",
+      "date": "1996-05",
+      "url": ""
+    },
+    {
+      "name": "Internal Auditor of Quality Systems",
+      "issuer": "DGQ",
+      "date": "1996-05",
+      "url": ""
+    },
+    {
+      "name": "Medizinproduktegesetz, EG-Richtlinien, CE-Kennzeichnung",
+      "issuer": "MUS Fortbildungsseminar, Köln",
+      "date": "1996-10",
+      "url": ""
+    },
+    {
+      "name": "EOQ Quality Auditor",
+      "issuer": "EOQ / DGQ",
+      "date": "1996-06",
+      "url": ""
+    },
+    {
+      "name": "VDA6.1 und QS9000 Anforderungen",
+      "issuer": "Technische Akademie Wuppertal (TAW)",
+      "date": "1997-05",
+      "url": ""
+    },
+    {
+      "name": "Interne Audits VDA6.1, QS9000, BOS",
+      "issuer": "GFQ Akademie GmbH (firmeninternes Seminar bei Johnson Controls)",
+      "date": "1998-01",
+      "url": ""
+    },
+    {
+      "name": "Prüfmittelstudien",
+      "issuer": "Johnson Controls (on-the-job)",
+      "date": "1998-01",
+      "url": ""
+    },
+    {
+      "name": "REFA-Grundschein / REFA-Sachbearbeiter",
+      "issuer": "REFA-Verband Köln",
+      "date": "1996-09",
+      "url": ""
+    },
+    {
+      "name": "Arbeitssystemgestaltung",
+      "issuer": "REFA-Verband",
+      "date": "1996-11",
+      "url": ""
+    },
+    {
+      "name": "Zertifizierter Program Manager (PMU / JCI)",
+      "issuer": "Johnson Controls",
+      "date": "2002-07",
+      "url": ""
+    },
+    {
+      "name": "Zertifizierter KMU-Fachberater Sanierung",
+      "issuer": "KMU-Akademie e.V., Hamm",
+      "date": "2010-03",
+      "url": ""
+    },
+    {
+      "name": "Das Unternehmen mit wichtigen Kennzahlen steuern",
+      "issuer": "RKW Rationalisierungs-Kuratorium der Deutschen Wirtschaft e.V., Bayern Büro Nürnberg",
+      "date": "1996-10",
+      "url": ""
+    },
+    {
+      "name": "Mit Strategie zu mehr Erfolg (EKS-Erfolgsstrategie)",
+      "issuer": "KMU-Akademie e.V. / Cord Tepelmann, UnternehmerCoach",
+      "date": "2010-04",
+      "url": ""
+    },
+    {
+      "name": "Umweltsimulation von Schwingungs- und Stoßbelastungen (Shakerkursus)",
+      "issuer": "Technische Akademie Esslingen (TAE)",
+      "date": "1999-01",
+      "url": ""
+    },
+    {
+      "name": "Training in Testmethoden und Verfahren",
+      "issuer": "Prince Automotive / Johnson Controls (on-the-job)",
+      "date": "1998-08",
+      "url": ""
+    },
+    {
+      "name": "CANoe Praxis-Workshop (1 Tag)",
+      "issuer": "Vector Informatik GmbH, Stuttgart",
+      "date": "2000-09",
+      "url": ""
+    },
+    {
+      "name": "English in Management and International Business",
+      "issuer": null,
+      "date": "2001-02",
+      "url": ""
+    },
+    {
+      "name": "Interne Trainings Projektingenieure Sitze",
+      "issuer": "Johnson Controls",
+      "date": "2000-01",
+      "url": ""
+    },
+    {
+      "name": "TPG Infotag Microsoft Project",
+      "issuer": "TPG The Project Group",
+      "date": "2012-10",
+      "url": ""
+    },
+    {
+      "name": "DVS-Lehrgänge Gasschweißen (G-Schw) und MAG-Dünnblechschweißen (MAG-St D)",
+      "issuer": "DVS / Handwerkszentrum Bonn",
+      "date": "1993-04",
+      "url": ""
+    },
+    {
+      "name": "Datenschutz 2012",
+      "issuer": "Luther Rechtsanwaltsgesellschaft mbH",
+      "date": "2012-09",
+      "url": ""
+    },
+    {
+      "name": "2x 3 Tage Teambuilding",
+      "issuer": null,
+      "date": "1996-01",
+      "url": ""
+    },
+    {
+      "name": "Rhetorik und Kommunikation (Diplom)",
+      "issuer": "Institut für Rhetorik und Kommunikation, Bornheim bei Bonn",
+      "date": "1996-11",
+      "url": ""
+    },
+    {
+      "name": "DSGVO Live-Webinar",
+      "issuer": "eRecht24",
+      "date": "2018-07",
+      "url": ""
+    },
+    {
+      "name": "Siemens NX Viewer / 3D Tool V12",
+      "issuer": "The Implementers GmbH (on-the-job)",
+      "date": "2017-11",
+      "url": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Betriebssysteme",
+      "keywords": [
+        "Windows (bis 11) (gut)",
+        "Linux (Basis)"
+      ]
+    },
+    {
+      "name": "Office",
+      "keywords": [
+        "MS Excel (sehr gut)",
+        "MS Project (sehr gut)",
+        "MS PowerPoint (gut)",
+        "MS Word (gut)"
+      ]
+    },
+    {
+      "name": "CAD",
+      "keywords": [
+        "OnShape (gut)",
+        "AutoCAD 3D (gut)",
+        "CATIA V5 (Basis)"
+      ]
+    },
+    {
+      "name": "PDM",
+      "keywords": [
+        "Sherpa (Basis)",
+        "Matrix One (Basis)"
+      ]
+    },
+    {
+      "name": "ERP/MRP",
+      "keywords": [
+        "SAP (Basis)"
+      ]
+    },
+    {
+      "name": "Project Management Tools",
+      "keywords": [
+        "MS Project (sehr gut)",
+        "DotProject (Basis)",
+        "eGroup (gut)",
+        "eRoom (gut)",
+        "BugZilla (gut)"
+      ]
+    },
+    {
+      "name": "Datenbanken",
+      "keywords": [
+        "MySQL (Basis)",
+        "Postgres (Basis)",
+        "Access (Basis)",
+        "Lotus 1-2-3 (Basis)"
+      ]
+    },
+    {
+      "name": "Programmierung",
+      "keywords": [
+        "Python (gut)",
+        "C# (Basis)",
+        "Visual Basic (Basis)",
+        "VB.NET (Basis)",
+        "Pascal (Basis)",
+        "C (Basis)"
+      ]
+    },
+    {
+      "name": "AI & Automation",
+      "keywords": [
+        "N8N (gut)",
+        "Ollama & LM Studio (lokale KI) (gut)",
+        "Claude Code / Codex (gut)",
+        "GPT-OS:20B / Qwen etc. (gut)",
+        "Lokale Telefonagenten / Local Phone Agents (gut)"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Deutsch",
+      "fluency": "Muttersprache"
+    },
+    {
+      "language": "Englisch",
+      "fluency": "Sehr gut"
+    },
+    {
+      "language": "Französisch",
+      "fluency": "Basiskenntnisse"
+    },
+    {
+      "language": "Spanisch",
+      "fluency": "Basiskenntnisse"
+    },
+    {
+      "language": "Polnisch",
+      "fluency": "Basiskenntnisse"
+    }
+  ],
+  "meta": {
+    "canonical": "https://schifferm.de/career/profile.json",
+    "version": "2026-03-17 14:08:01",
+    "lastModified": "2026-03-17 14:08:01"
+  }
+}
