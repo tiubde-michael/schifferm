@@ -1,19 +1,25 @@
-import fs from "fs";
-import path from "path";
 import { buildMetadata } from "../../../lib/seo";
 import { profileContent } from "../../../content/profile";
 import { getLocale } from "../../../lib/content";
 import { siteConfig } from "../../../lib/site";
+import {
+  getPersonalInfo,
+  getWorkExperience,
+  getEducation,
+  getSkillsGrouped,
+  getCertificationsGrouped,
+  getLanguages,
+  getAwards,
+  getDrivingLicenses,
+  getHobbies,
+  getMemberships,
+} from "../../../lib/careerData";
+import LevelDots from "../../../components/LevelDots";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
   return siteConfig.locales.map((lang) => ({ lang }));
-}
-
-function loadCareerData(lang) {
-  const jsonPath = path.join(process.cwd(), "public", "career", lang, "profile.json");
-  return JSON.parse(fs.readFileSync(jsonPath, "utf8"));
 }
 
 const copy = {
@@ -27,9 +33,15 @@ const copy = {
     certifications: "Zertifikate",
     languages: "Sprachen",
     awards: "Auszeichnungen",
+    drivingLicenses: "Führerscheine",
+    hobbies: "Interessen",
+    memberships: "Mitgliedschaften",
     present: "heute",
     download: "Maschinenlesbare Formate",
     downloadHint: "Diese Daten sind auch in maschinenlesbaren Formaten verfügbar:",
+    projects: "Projekte",
+    thesis: "Abschlussarbeit",
+    grade: "Note",
   },
   en: {
     pageTitle: "Full Curriculum Vitae",
@@ -41,9 +53,15 @@ const copy = {
     certifications: "Certifications",
     languages: "Languages",
     awards: "Awards",
+    drivingLicenses: "Driving Licenses",
+    hobbies: "Interests",
+    memberships: "Memberships",
     present: "present",
     download: "Machine-Readable Formats",
     downloadHint: "This data is also available in machine-readable formats:",
+    projects: "Projects",
+    thesis: "Thesis",
+    grade: "Grade",
   },
 };
 
@@ -61,7 +79,16 @@ export default async function CareerPage({ params }) {
   const resolvedParams = await params;
   const lang = getLocale(resolvedParams?.lang);
   const t = copy[lang];
-  const data = loadCareerData(lang);
+  const info = getPersonalInfo(lang);
+  const work = getWorkExperience(lang);
+  const education = getEducation(lang);
+  const skillGroups = getSkillsGrouped(lang);
+  const certGroups = getCertificationsGrouped(lang);
+  const languages = getLanguages(lang);
+  const awards = getAwards(lang);
+  const drivingLicenses = getDrivingLicenses(lang);
+  const hobbies = getHobbies(lang);
+  const memberships = getMemberships(lang);
 
   return (
     <section className="mx-auto max-w-4xl px-4 py-16">
@@ -70,10 +97,8 @@ export default async function CareerPage({ params }) {
         <p className="text-xs font-semibold uppercase tracking-wide text-implementers-blue">
           {t.pageTitle}
         </p>
-        <h1 className="mt-2 font-heading text-3xl text-slate-900">
-          {data.basics.name}
-        </h1>
-        <p className="mt-3 text-base text-slate-700">{data.basics.label}</p>
+        <h1 className="mt-2 font-heading text-3xl text-slate-900">{info.name}</h1>
+        <p className="mt-3 text-base text-slate-700">{info.summary}</p>
       </div>
 
       {/* Contact */}
@@ -81,41 +106,39 @@ export default async function CareerPage({ params }) {
         <h2 className="text-lg font-semibold text-slate-900">{t.contact}</h2>
         <div className="mt-3 grid gap-2 text-sm text-slate-700 sm:grid-cols-2">
           <div>
-            <a href={`mailto:${data.basics.email}`} className="text-implementers-blue hover:underline">
-              {data.basics.email}
+            <a href={`mailto:${info.email}`} className="text-implementers-blue hover:underline">
+              {info.email}
             </a>
           </div>
           <div>
-            <a href={`tel:${data.basics.phone.replace(/\s/g, "")}`} className="text-implementers-blue hover:underline">
-              {data.basics.phone}
+            <a href={`tel:${info.phone.replace(/\s/g, "")}`} className="text-implementers-blue hover:underline">
+              {info.phone}
             </a>
           </div>
-          <div>{data.basics.location.city}, {data.basics.location.countryCode}</div>
+          <div>{info.city}, {info.country}</div>
           <div>
-            <a href={data.basics.url} className="text-implementers-blue hover:underline">
-              {data.basics.url}
+            <a href={info.website} className="text-implementers-blue hover:underline">
+              {info.website}
             </a>
           </div>
-          {data.basics.profiles?.map((p) => (
-            p.url && (
-              <div key={p.network}>
-                <a href={p.url} className="text-implementers-blue hover:underline" target="_blank" rel="noopener noreferrer">
-                  {p.network}
-                </a>
-              </div>
-            )
-          ))}
+          {info.linkedinUrl && (
+            <div>
+              <a href={info.linkedinUrl} className="text-implementers-blue hover:underline" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </div>
+          )}
         </div>
       </div>
 
       {/* Languages */}
-      {data.languages?.length > 0 && (
+      {languages.length > 0 && (
         <div className="mb-10 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
           <h2 className="text-lg font-semibold text-slate-900">{t.languages}</h2>
           <div className="mt-3 flex flex-wrap gap-3">
-            {data.languages.map((l) => (
-              <span key={l.language} className="rounded-full border border-slate-200 px-3 py-1 text-sm text-slate-700">
-                {l.language}: <span className="font-medium">{l.fluency}</span>
+            {languages.map((la) => (
+              <span key={la.language} className="rounded-full border border-slate-200 px-3 py-1 text-sm text-slate-700">
+                {la.language}: <span className="font-medium">{la.level}</span>
               </span>
             ))}
           </div>
@@ -125,28 +148,45 @@ export default async function CareerPage({ params }) {
       {/* Work Experience */}
       <div className="mb-10">
         <h2 className="mb-6 text-xl font-semibold text-slate-900">{t.experience}</h2>
-        <div className="space-y-8">
-          {data.work?.map((job, i) => (
-            <div key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="space-y-6">
+          {work.map((job) => (
+            <div key={job.id} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <h3 className="text-base font-semibold text-slate-900">{job.name}</h3>
-                <span className="text-xs font-medium text-slate-400">
-                  {job.startDate} – {job.endDate || t.present}
+                <h3 className="text-base font-semibold text-slate-900">{job.employer}</h3>
+                <span className="text-xs font-mono font-medium text-slate-400">
+                  {job.dateFrom} – {job.dateTo || t.present}
                 </span>
               </div>
-              <div className="mt-1 text-sm font-medium text-implementers-blue">{job.position}</div>
-              {job.summary && (
-                <div className="mt-1 text-xs text-slate-500">{job.summary}</div>
+              <div className="mt-1 text-sm font-medium text-implementers-blue">{job.role}</div>
+              {(job.level || job.department) && (
+                <div className="mt-1 flex flex-wrap gap-2">
+                  {job.level && (
+                    <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs text-slate-600">{job.level}</span>
+                  )}
+                  {job.department && (
+                    <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs text-slate-600">{job.department}</span>
+                  )}
+                </div>
               )}
-              {job.highlights?.length > 0 && (
-                <ul className="mt-4 space-y-2 text-sm text-slate-700">
-                  {job.highlights.map((h, j) => (
-                    <li key={j} className="flex gap-2">
-                      <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-implementers-blue" />
-                      <span>{h}</span>
-                    </li>
-                  ))}
-                </ul>
+              {job.description && (
+                <p className="mt-2 text-sm text-slate-600">{job.description}</p>
+              )}
+              {job.projects.length > 0 && (
+                <div className="mt-3 border-t border-slate-100 pt-3">
+                  <div className="text-xs font-semibold uppercase tracking-wide text-slate-400 mb-2">{t.projects}</div>
+                  <ul className="space-y-1.5 text-sm text-slate-700">
+                    {job.projects.map((p) => (
+                      <li key={p.id} className="flex gap-2">
+                        <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-implementers-blue" />
+                        <span>
+                          <span className="font-medium">{p.title}</span>
+                          {p.client && <span className="text-slate-500"> ({p.client})</span>}
+                          <span className="text-slate-400 text-xs ml-1">{p.dateFrom}–{p.dateTo || t.present}</span>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               )}
             </div>
           ))}
@@ -157,21 +197,25 @@ export default async function CareerPage({ params }) {
       <div className="mb-10">
         <h2 className="mb-6 text-xl font-semibold text-slate-900">{t.education}</h2>
         <div className="space-y-4">
-          {data.education?.map((edu, i) => (
-            <div key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          {education.map((edu) => (
+            <div key={edu.id} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="text-base font-semibold text-slate-900">{edu.institution}</h3>
-                <span className="text-xs font-medium text-slate-400">
-                  {edu.startDate} – {edu.endDate}
+                <span className="text-xs font-mono font-medium text-slate-400">
+                  {edu.dateFrom} – {edu.dateTo}
                 </span>
               </div>
               <div className="mt-1 text-sm font-medium text-implementers-blue">
-                {edu.studyType} — {edu.area}
+                {edu.degree} — {edu.field}
               </div>
-              {edu.score && (
-                <div className="mt-1 text-xs text-slate-500">
-                  {lang === "de" ? "Note" : "Grade"}: {edu.score}
-                </div>
+              {edu.grade && (
+                <div className="mt-1 text-xs text-slate-500">{t.grade}: {edu.grade}</div>
+              )}
+              {edu.thesis && (
+                <div className="mt-1 text-xs text-slate-500">{t.thesis}: {edu.thesis}</div>
+              )}
+              {edu.description && (
+                <div className="mt-1 text-xs text-slate-500">{edu.description}</div>
               )}
             </div>
           ))}
@@ -182,14 +226,17 @@ export default async function CareerPage({ params }) {
       <div className="mb-10">
         <h2 className="mb-6 text-xl font-semibold text-slate-900">{t.skills}</h2>
         <div className="grid gap-4 sm:grid-cols-2">
-          {data.skills?.map((group, i) => (
-            <div key={i} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <h3 className="text-sm font-semibold text-slate-900">{group.name}</h3>
-              <div className="mt-2 flex flex-wrap gap-1.5">
-                {group.keywords.map((kw, j) => (
-                  <span key={j} className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs text-slate-600">
-                    {kw}
-                  </span>
+          {skillGroups.map((group) => (
+            <div key={group.category} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <h3 className="text-sm font-bold uppercase tracking-wider text-implementers-blue mb-3">
+                {group.label}
+              </h3>
+              <div className="space-y-2">
+                {group.items.map((skill) => (
+                  <div key={skill.id} className="flex items-center justify-between gap-2">
+                    <span className="text-sm text-slate-900">{skill.name}</span>
+                    <LevelDots level={skill.level} />
+                  </div>
                 ))}
               </div>
             </div>
@@ -200,34 +247,91 @@ export default async function CareerPage({ params }) {
       {/* Certifications */}
       <div className="mb-10">
         <h2 className="mb-6 text-xl font-semibold text-slate-900">{t.certifications}</h2>
-        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-          <ul className="space-y-3 text-sm text-slate-700">
-            {data.certificates?.map((cert, i) => (
-              <li key={i} className="flex flex-wrap items-baseline justify-between gap-2">
-                <div>
-                  <span className="font-medium text-slate-900">{cert.name}</span>
-                  <span className="ml-2 text-slate-500">— {cert.issuer}</span>
-                </div>
-                <span className="text-xs text-slate-400">{cert.date}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
+        {certGroups.map((group) => (
+          <div key={group.category} className="mb-4 rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden">
+            <div className="flex items-center justify-between px-6 py-3 bg-slate-50">
+              <h3 className="text-sm font-bold uppercase tracking-wider text-slate-600">{group.label}</h3>
+              <span className="rounded-full bg-slate-200 px-2.5 py-0.5 text-xs font-semibold text-slate-600">
+                {group.items.length}
+              </span>
+            </div>
+            <ul className="px-6 divide-y divide-slate-100">
+              {group.items.map((cert) => (
+                <li key={cert.id} className="flex flex-wrap items-baseline justify-between gap-2 py-2.5">
+                  <div>
+                    <span className="text-sm font-medium text-slate-900">{cert.name}</span>
+                    {cert.issuer && <span className="ml-2 text-sm text-slate-500">— {cert.issuer}</span>}
+                  </div>
+                  <span className="text-xs font-mono text-slate-400">{cert.dateFrom}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
 
       {/* Awards */}
-      {data.awards?.length > 0 && (
+      {awards.length > 0 && (
         <div className="mb-10">
           <h2 className="mb-6 text-xl font-semibold text-slate-900">{t.awards}</h2>
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <ul className="space-y-2 text-sm text-slate-700">
-              {data.awards.map((a, i) => (
-                <li key={i}>
-                  <span className="font-medium text-slate-900">{a.title}</span>
-                  <span className="ml-2 text-xs text-slate-400">({a.date})</span>
+              {awards.map((a) => (
+                <li key={a.name}>
+                  <span className="font-medium text-slate-900">{a.name}</span>
+                  <span className="ml-2 text-xs text-slate-400">({a.year})</span>
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+      )}
+
+      {/* Driving Licenses */}
+      {drivingLicenses.length > 0 && (
+        <div className="mb-10">
+          <h2 className="mb-6 text-xl font-semibold text-slate-900">{t.drivingLicenses}</h2>
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="flex flex-wrap gap-2">
+              {drivingLicenses.map((d) => (
+                <span key={d.name} className="rounded-full border border-slate-200 px-3 py-1 text-sm text-slate-700">
+                  {d.name}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Memberships */}
+      {memberships.length > 0 && (
+        <div className="mb-10">
+          <h2 className="mb-6 text-xl font-semibold text-slate-900">{t.memberships}</h2>
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <ul className="space-y-2 text-sm text-slate-700">
+              {memberships.map((m) => (
+                <li key={m.organization}>
+                  <span className="font-medium text-slate-900">{m.organization}</span>
+                  {m.description && <span className="ml-2 text-slate-500">— {m.description}</span>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
+
+      {/* Hobbies */}
+      {hobbies.length > 0 && (
+        <div className="mb-10">
+          <h2 className="mb-6 text-xl font-semibold text-slate-900">{t.hobbies}</h2>
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="flex flex-wrap gap-2">
+              {hobbies.map((h) => (
+                <span key={h.name} className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
+                  {h.name}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       )}

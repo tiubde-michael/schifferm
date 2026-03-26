@@ -78,125 +78,364 @@
     }
   ],
   "skills": {
-    "ai": [
-      "RAG",
-      "vector databases",
-      "LLM workflows",
-      "local LLMs (Ollama/LM Studio)",
-      "agent workflows"
+    "os": [
+      "Windows (bis 11) (gut)",
+      "Linux (Basis)"
     ],
-    "automation": [
-      "n8n"
-    ],
-    "programming": [
-      "Python",
-      "C# (basic)",
-      "VB/VB.NET (basic)"
-    ],
-    "databases": [
-      "MySQL (basic)",
-      "Postgres (basic)"
-    ],
-    "ops": [
-      "SAP (basic)"
-    ],
-    "officePm": [
-      "Excel (very good)",
-      "MS Project (good)",
-      "PowerPoint (good)",
-      "Word (good)"
+    "office": [
+      "MS Excel (sehr gut)",
+      "MS Project (sehr gut)",
+      "MS PowerPoint (gut)",
+      "MS Word (gut)"
     ],
     "cad": [
-      "OnShape (good)",
-      "AutoCAD 3D (good)",
-      "CATIA V5 (basic)"
+      "OnShape (gut)",
+      "AutoCAD 3D (gut)",
+      "CATIA V5 (Basis)"
+    ],
+    "pdm": [
+      "Sherpa (Basis)",
+      "Matrix One (Basis)"
+    ],
+    "mrp": [
+      "SAP (Basis)"
+    ],
+    "pm_tools": [
+      "MS Project (sehr gut)",
+      "DotProject (Basis)",
+      "eGroup (gut)",
+      "eRoom (gut)",
+      "BugZilla (gut)"
+    ],
+    "databases": [
+      "MySQL (Basis)",
+      "Postgres (Basis)",
+      "Access (Basis)",
+      "Lotus 1-2-3 (Basis)"
+    ],
+    "programming": [
+      "Python (gut)",
+      "C# (Basis)",
+      "Visual Basic (Basis)",
+      "VB.NET (Basis)",
+      "Pascal (Basis)",
+      "C (Basis)"
+    ],
+    "ai_automation": [
+      "N8N (gut)",
+      "Ollama & LM Studio (lokale KI) (gut)",
+      "Claude Code / Codex (gut)",
+      "GPT-OS:20B / Qwen etc. (gut)",
+      "Lokale Telefonagenten / Local Phone Agents (gut)"
     ]
   },
   "experience": [
     {
-      "period": "1997–2010",
+      "period": "2010-01–heute",
+      "title": "The Implementers GmbH",
+      "role": "Berater / Geschäftsführer",
+      "description": "Beratung und Interim Management in der Automobilindustrie, Healthcare und weiteren Branchen. Schwerpunkte: Programm Management, Serienanläufe, Werksleitung, Lieferantenentwicklung, Kostenreduzierung, Prozessoptimierung, KI-Implementierung und KI-gestützte Prozessautomatisierung."
+    },
+    {
+      "period": "2009-07–2010-06",
       "title": "Johnson Controls",
-      "details": "Test Engineering, Electronics coordination, PMO, Plant leadership, Launch/Taskforce roles"
+      "role": "Program Manager Transfer Insolvente Lieferanten",
+      "description": "Führung eines interdisziplinären, europäischen Teams zur Übernahme und Verlagerung von Umfängen aus Insolvenzen von verschiedenen Lieferanten für das Ford C344 Interieur Programm (Cockpit, Konsole, Säulen, Türverkleidungen) inkl. Änderungsmanagement und Bemusterung. Serienanlauf in Spanien."
     },
     {
-      "period": "Since 2010",
-      "title": "The Implementers",
-      "details": "Program management, supplier development, relocations, cost-down"
+      "period": "2007-12–2009-06",
+      "title": "Johnson Controls",
+      "role": "Program Manager Hyundai/Kia",
+      "description": "Führung eines interdisziplinären, europäischen Teams, Dienstsitz Bratislava, mit dem Ziel eines erfolgreichen Serienanlaufes der Hyundai i30 Türverkleidung unter Berücksichtigung von Profit, Qualität und Kundenzufriedenheit. Entwicklung und Produktion in SK, Kunde in CZ."
     },
     {
-      "period": "Aug 2025",
-      "title": "Implementierung KI-Auswertungen und Dokumentation im Krankenhaus",
-      "details": "Implementierung KI-Auswertungen und Dokumentation im Krankenhaus"
+      "period": "2006-09–2007-11",
+      "title": "Johnson Controls",
+      "role": "Leiter Technik und Produktion",
+      "description": "Krisenmanagement. Interim Produktionsleitung in einem 300 MA-Werk zur Montage von Sonnenblenden sowie der Spritzgussfertigung aller Komponenten in Madrid."
+    },
+    {
+      "period": "2006-01–2007-11",
+      "title": "Johnson Controls",
+      "role": "Bereichsleiter",
+      "description": "Führung des Produktionsbereiches Schiebehimmel (GMPUR) und Sitzlehnenverkleidungen (Naturfasern) mit ca. 80 Mitarbeitern ca. 12 Mil.€ Jahresumsatz, inkl. Fertigungstechnik, Qualitätssicherung, Produktionsplanung und Outbound-Logistik mit dem Ziel der Verbesserung der Wirtschaftlichkeit des Bereiches. Prozesswerk mit Montage in Deutschland."
+    },
+    {
+      "period": "2005-08–2005-12",
+      "title": "Johnson Controls",
+      "role": "Leiter Taskforce Ausschuss und Effizienz",
+      "description": "Führung eines interdisziplinären europäischen Teams, mit dem Ziel der kurzfristigen Reduzierung des Ausschusses und Steigerung der Effizienz bis zur Schließung des Werkes. Dachhimmelwerk in England."
+    },
+    {
+      "period": "2003-09–2005-08",
+      "title": "Johnson Controls",
+      "role": "Technischer Leiter & Launch-Management",
+      "description": "Führung und Umstrukturierung der Bereiche Launch Management, Arbeitsvorbereitung, Prozessoptimierung und Instandhaltung mit ca. 50 Mitarbeitern, mit dem Ziel der kurzfristigen und dauerhaften Reduzierung des Ausschusses und Steigerung der Effizienz. Dachhimmelwerk in Frankreich."
+    },
+    {
+      "period": "2001-05–2003-08",
+      "title": "Johnson Controls",
+      "role": "Black Belt / Program Management Office",
+      "description": "Implementierung von Management-Informationssystemen, Vorbereitung und Durchführung von Projektmanagement-Trainings, Optimierung des Änderungsprozesses und Optimierung der Entwicklungs-Ressourcenplanung."
+    },
+    {
+      "period": "2000-04–2001-05",
+      "title": "Johnson Controls",
+      "role": "Projekt Engineer Electronics",
+      "description": "Koordination der Elektrischen-, Elektronischen- und Softwareumfänge während der Sitzentwicklung inkl. Freigaben, Änderungsmanagement, Erprobungen und Serienanlaufbetreuung."
+    },
+    {
+      "period": "1998-02–2000-04",
+      "title": "Johnson Controls",
+      "role": "Test-Engineer / Testkoordinator",
+      "description": "Aufbau eines neuen Bereiches „Versuch Interieur“ inkl. Konstruktion und Anschaffung von Prüfmaschinen. Erstellung von Testplänen für verschiedene europäische Fahrzeug-Innenraum-Projekte, Budgetplanung für diese Projekte und diesen Bereich, Betreuung von Versuchen wie z.B. Schwingungsuntersuchungen, Lebensdauertests und gesetzlich Homologations-Versuche."
+    },
+    {
+      "period": "1997-02–1998-02",
+      "title": "Johnson Controls",
+      "role": "Prüfmittelverantwortlicher / Werkstudent im Bereich Versuch",
+      "description": "Betreuung des QM Systems VDA6.1, QS9000, Konstruktion Testvorrichtungen, Versuchsdurchführung und Auswertungen."
+    },
+    {
+      "period": "1997-01–1998-01",
+      "title": "UB Dr. Hans Schiffer",
+      "role": "Backoffice Assistant – Unternehmensberatung",
+      "description": "Erstellung und Formatierung von Präsentationen, Angeboten und Projektunterlagen. Vorbereitung von Berichten, Analysen und Workshop-Materialien. Pflege von Kunden- und Projektdaten. Unterstützung bei Rechnungsstellung, Zeiterfassung und monatlichem Reporting."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Invoice API — Medizinisches Abrechnungssystem",
+      "client": null,
+      "dateFrom": "2025-12",
+      "dateTo": "2026-02",
+      "category": "ai",
+      "description": "Abrechnungssystem für medizinische Leistungserbringer mit ZUGFeRD-konformer Rechnungserzeugung und OpenEMR-Integration."
+    },
+    {
+      "title": "Intelligente Dokumentenerkennung & automatisierte Bankabstimmung",
+      "client": null,
+      "dateFrom": "2025-08",
+      "dateTo": null,
+      "category": "ai",
+      "description": "KI-gestützte Dokumentenerkennung und automatisierte Zuordnung zu Bankbewegungen. Multi-Modell OCR-Pipeline, ML-basierte Dokumententrennung, Web-UI."
+    },
+    {
+      "title": "Konzept Leistungsdokumentation Schmerztherapie",
+      "client": null,
+      "dateFrom": "2026-02",
+      "dateTo": "2026-02",
+      "category": "healthcare",
+      "description": "Konzept zur digitalen Leistungsdokumentation in der Schmerztherapie."
+    },
+    {
+      "title": "VIVO PainCare — KI-gestützte klinische Schmerzbewertung und Aufnahmebegründung",
+      "client": "Praxis für Schmerztherapie & TCM, Baden-Baden",
+      "dateFrom": "2025-09",
+      "dateTo": "2026-03",
+      "category": "ai",
+      "description": "Klinisches Entscheidungsunterstützungssystem: automatische Auswertung von Schmerzfragebögen mit 20-Faktor-Ampelbewertung und KI-gestützter Aufnahmebegründung."
+    },
+    {
+      "title": "Klinische Dokumentation — KI-gestützte Transkriptions- und Dokumentationspipeline",
+      "client": null,
+      "dateFrom": "2025-08",
+      "dateTo": "2026-02",
+      "category": "ai",
+      "description": "KI-Pipeline zur automatisierten medizinischen Dokumentation aus Arzt-Patienten-Gesprächen. Self-Hosted LLM, Speaker Diarization, OpenEMR-Integration."
+    },
+    {
+      "title": "Lieferantenentwicklung Fahrwerksteile",
+      "client": "KTM",
+      "dateFrom": "2023-05",
+      "dateTo": "2024-11",
+      "category": "manufacturing",
+      "description": "Lieferantenentwicklung Fließpressteile mit Dreh-/Fräsbearbeitung inkl. Änderungen, Neuanläufen und Reklamationsmanagement."
+    },
+    {
+      "title": "Verlagerung von 150 Fahrwerksteilen",
+      "client": "KTM",
+      "dateFrom": "2022-07",
+      "dateTo": "2024-01",
+      "category": "manufacturing",
+      "description": "Verlagerung von 150 Fahrwerksteilen in laufender Serie wg. kurzfristiger Standortschließung."
+    },
+    {
+      "title": "Prozessaufnahme und Prozessoptimierung",
+      "client": "Von Roll Schweiz AG",
+      "dateFrom": "2018-06",
+      "dateTo": "2018-11",
+      "category": "consulting",
+      "description": "Prozessoptimierung im internen Vertrieb eines Schweizer Maschinenbauunternehmens."
+    },
+    {
+      "title": "Back Office Support und Prozessoptimierung",
+      "client": "Praxis für Schmerztherapie & TCM, Baden-Baden",
+      "dateFrom": "2018-05",
+      "dateTo": "2025-05",
+      "category": "healthcare",
+      "description": "Laufende Unterstützung einer Privatpraxis: Narkoseprotokolle, Dokumentenmanagement, Telemedizin-Workflows."
+    },
+    {
+      "title": "Existenzgründungsberatung und Coaching",
+      "client": "Praxis für Schmerztherapie & TCM, Baden-Baden",
+      "dateFrom": "2017-05",
+      "dateTo": "2018-04",
+      "category": "consulting",
+      "description": "Existenzgründungsberatung und Coaching einer Privatpraxis für Schmerztherapie & TCM."
+    },
+    {
+      "title": "Interim Werksleitung",
+      "client": "MAO Automotive GmbH & Co",
+      "dateFrom": "2018-02",
+      "dateTo": "2018-06",
+      "category": "manufacturing",
+      "description": "Interim Werksleitung und Stabilisierung eines ungarischen Produktionswerkes bis zur Übergabe."
+    },
+    {
+      "title": "Lieferantenentwicklung DAG BR238 Türverkleidung",
+      "client": "Megatech Industries Deutschland GmbH",
+      "dateFrom": "2016-07",
+      "dateTo": "2017-10",
+      "category": "manufacturing",
+      "description": "Lieferantenentwicklung DAG BR238 Türverkleidung inkl. Musterungen, PPAP/EMPB und Serienanlauf."
+    },
+    {
+      "title": "Interim COO & Werksleiter",
+      "client": "PWG Profilrollen-Werkzeugbau GmbH",
+      "dateFrom": "2015-09",
+      "dateTo": "2016-05",
+      "category": "manufacturing",
+      "description": "Interim COO & Werksleiter bei Aluminium verarbeitendem KFZ-Zulieferer. Ausbau Standort Slowakei."
+    },
+    {
+      "title": "Kostenreduzierung Dachhimmelproduktion",
+      "client": "Motus Headliner GmbH",
+      "dateFrom": "2015-01",
+      "dateTo": "2015-08",
+      "category": "manufacturing",
+      "description": "Kostenreduzierung (Prozess, Material, Lohn, Lieferanten) in der Dachhimmelproduktion."
+    },
+    {
+      "title": "Programm Management Türinnenverkleidung DAG C292",
+      "client": "Toyota Boshoku America",
+      "dateFrom": "2012-09",
+      "dateTo": "2015-01",
+      "category": "manufacturing",
+      "description": "Programm Management Türinnenverkleidung DAG C292 inkl. Industrialisierung in den USA."
+    },
+    {
+      "title": "KFZ Sonnenblenden Entwicklung",
+      "client": "MARTUR FOMPAK",
+      "dateFrom": "2012-01",
+      "dateTo": "2014-12",
+      "category": "manufacturing",
+      "description": "Beratung des Projektteams in der Türkei zur Sonnenblenden-Entwicklung und Erstmusterung."
+    },
+    {
+      "title": "Kostenreduzierung DAG C218 Türverkleidung",
+      "client": "Toyota Boshoku Europe NV",
+      "dateFrom": "2012-03",
+      "dateTo": "2012-08",
+      "category": "manufacturing",
+      "description": "Kostenreduzierung bei Türinnenverkleidung DAG C218."
+    },
+    {
+      "title": "Werkzeugverlagerung Spritzgusswerkzeuge",
+      "client": "Toyota Boshoku Europe NV",
+      "dateFrom": "2012-01",
+      "dateTo": "2012-08",
+      "category": "manufacturing",
+      "description": "Werkzeugverlagerung Spritzgusswerkzeuge zu neuen Lieferanten in laufender Serie."
+    },
+    {
+      "title": "Programm Management BMW Sonnenblenden",
+      "client": "Magna",
+      "dateFrom": "2010-07",
+      "dateTo": "2011-12",
+      "category": "manufacturing",
+      "description": "Programm Management BMW Sonnenblenden — Neuentwicklung und Produktionsverlagerung."
     }
   ],
   "education": [
     {
-      "period": "1995–1998",
-      "title": "Dipl.-Ing. (FH) Maschinenbau, Rheinische FH Köln",
-      "details": "Thesis: Versuchsstand ECE-R17 Kopfstützenprüfung."
+      "period": "2001-09–2003-11",
+      "title": "MBA International Management",
+      "institution": "UEL University of East London / ELBS London",
+      "grade": "63"
     },
     {
-      "period": "2001–2003",
-      "title": "MBA International Management, UEL/ELBS London",
-      "details": "Thesis: Successful Implementation of Kaizen."
-    }
-  ],
-  "workTypes": [
-    {
-      "id": "A",
-      "title": "KI-gestuetzte Auswertung & Dokumentation im Krankenhaus",
-      "status": "implementiert, seit 2025",
-      "stack": "Python/SQL/n8n/LLM workflows",
-      "outcomes": [
-        "standardisierte Outputs",
-        "reduzierter manueller Aufwand",
-        "verbesserte Konsistenz"
-      ]
+      "period": "1995-03–1998-05",
+      "title": "Dipl.-Ing. (FH) Maschinenbau, Studienrichtung: Konstruktionstechnik",
+      "institution": "Rheinische Fachhochschule Köln",
+      "grade": "1,3"
     },
     {
-      "id": "B",
-      "title": "Strukturierte Patientenaufnahme & Workflow-Automation",
-      "status": "aktiv",
-      "stack": "n8n/SQL/LLM workflows",
-      "outcomes": [
-        "strukturierte Intake-Daten",
-        "Routing-Logik",
-        "auswertungsfaehige Datensaetze"
-      ]
+      "period": "1992-10–1995-01",
+      "title": "Kfz-Mechaniker (Gesellenbrief) Kfz-Mechanik",
+      "institution": "Bonner Autohaus GmbH (Vertragswerkstatt der Daimler-Benz AG)",
+      "grade": null
     },
     {
-      "id": "C",
-      "title": "Serienanlauf / Programmmanagement",
-      "status": "wiederkehrend",
-      "stack": "program management methods",
-      "outcomes": [
-        "stabile SOP",
-        "Qualitaets- und Lieferperformance",
-        "Risikominderung"
-      ]
+      "period": "1988-06–1991-06",
+      "title": "Abitur Schwerpunkt Mathematik und Physik",
+      "institution": "Ernst-Moritz-Arndt-Gymnasium der Stadt Bonn",
+      "grade": "3,2"
     }
   ],
   "certifications": {
+    "ai_data": [
+      "Introduction to Deep Learning & Neural Networks with Keras (IBM) — IBM / Coursera (2026-01)",
+      "Vector Databases for RAG — IBM / Coursera (2025-05)",
+      "Build Intelligent Agents using DeepSeek & N8N — Board Infinity / Coursera (2025-05)",
+      "MySQL for Data Engineering — Duke University / Coursera (2025-05)",
+      "Python for Everybody (Specialization, 5 Kurse) — University of Michigan / Coursera (2025-03)",
+      "Google AI Essentials (Specialization, 5 Kurse) — Google / Coursera (2025-12)",
+      "Google Prompting Essentials (Specialization, 4 Kurse) — Google / Coursera (2025-12)",
+      "Introduction to AI (Google) — Google / Coursera (2025-12)",
+      "Introduction to OpenAI Codex — Scrimba / Coursera (2026-01)"
+    ],
+    "ai_healthcare": [
+      "Generative AI-Powered Solutions for Modern Healthcare (Specialization, 9 Kurse) — Coursera (2025-10)"
+    ],
     "quality": [
-      "DGQ Auditor / Qualitätsmanager (Qualitätstechnik II) — DGQ — 1996",
-      "REFA-Grundschein – REFA-Sachbearbeiter — REFA-Verband — 1997",
-      "Six Sigma Black Belt — Johnson Controls — 2001",
-      "Wertstrom-Engineering — Fraunhofer IAO — 2012"
+      "Toyota Boshoku Business Practices (TBBP) - Solving Problems The TB Way — Toyota Boshoku (2025-10)",
+      "Wertstrom-Engineering (4 Tage) — Fraunhofer IAO, Stuttgart (2012-10)",
+      "DFMEA und PFMEA (5 Tage) — Gabor Kulsar / Magna Steyr (2013-11)",
+      "Vertiefungsworkshop QM nach DIN EN ISO 9001:2008 — KMU-Berater Bundesverband / Gemeinschaft zertifizierter Unternehmensberater (2013-02)",
+      "SixSigma Zertifizierter Black Belt — Johnson Controls (2001-01)",
+      "EOQ Quality Systems Manager — EOQ / DGQ (1996-01)",
+      "DGQ-Qualitätsmanager — DGQ Bonn (1995-10)",
+      "Qualitätstechnik II — DGQ Bonn (1996-04)",
+      "DGQ-Auditor / Lead Auditor (DIN EN ISO 10011-2) — DGQ Bonn (1996-05)",
+      "Internal Auditor of Quality Systems — DGQ (1996-05)",
+      "Medizinproduktegesetz, EG-Richtlinien, CE-Kennzeichnung — MUS Fortbildungsseminar, Köln (1996-10)",
+      "EOQ Quality Auditor — EOQ / DGQ (1996-06)",
+      "VDA6.1 und QS9000 Anforderungen — Technische Akademie Wuppertal (TAW) (1997-05)",
+      "Interne Audits VDA6.1, QS9000, BOS — GFQ Akademie GmbH (firmeninternes Seminar bei Johnson Controls) (1998-01)",
+      "Prüfmittelstudien — Johnson Controls (on-the-job) (1998-01)",
+      "REFA-Grundschein / REFA-Sachbearbeiter — REFA-Verband Köln (1996-09)",
+      "Arbeitssystemgestaltung — REFA-Verband (1996-11)"
     ],
-    "program": [
-      "Program & Launch Management (PMI / PLUS) — Program & Launch Management University — 2002",
-      "KMU-Fachberater Sanierung® — KMU-Akademie e.V. — 2010"
+    "management": [
+      "Zertifizierter Program Manager (PMU / JCI) — Johnson Controls (2002-07)",
+      "Zertifizierter KMU-Fachberater Sanierung — KMU-Akademie e.V., Hamm (2010-03)",
+      "Das Unternehmen mit wichtigen Kennzahlen steuern — RKW Rationalisierungs-Kuratorium der Deutschen Wirtschaft e.V., Bayern Büro Nürnberg (1996-10)",
+      "Mit Strategie zu mehr Erfolg (EKS-Erfolgsstrategie) — KMU-Akademie e.V. / Cord Tepelmann, UnternehmerCoach (2010-04)"
     ],
-    "healthcare": [
-      "Generative AI im Gesundheitswesen (Kursreihe) — Coursera — 2025",
-      "Healthcare Operations & Project Management (Kursreihe) — Coursera — 2025"
-    ],
-    "aiData": [
-      "Vector Databases for RAG — IBM — 2025",
-      "Build Intelligent Agents using DeepSeek & n8n — Board Infinity — 2025",
-      "MySQL for Data Engineering — Duke University — 2025",
-      "Python for Everybody (Modules) — University of Michigan — 2025",
-      "Deep Learning with PyTorch, Keras and TensorFlow — IBM — 2026"
+    "misc": [
+      "Umweltsimulation von Schwingungs- und Stoßbelastungen (Shakerkursus) — Technische Akademie Esslingen (TAE) (1999-01)",
+      "Training in Testmethoden und Verfahren — Prince Automotive / Johnson Controls (on-the-job) (1998-08)",
+      "CANoe Praxis-Workshop (1 Tag) — Vector Informatik GmbH, Stuttgart (2000-09)",
+      "English in Management and International Business — — (2001-02)",
+      "Interne Trainings Projektingenieure Sitze — Johnson Controls (2000-01)",
+      "TPG Infotag Microsoft Project — TPG The Project Group (2012-10)",
+      "DVS-Lehrgänge Gasschweißen (G-Schw) und MAG-Dünnblechschweißen (MAG-St D) — DVS / Handwerkszentrum Bonn (1993-04)",
+      "Datenschutz 2012 — Luther Rechtsanwaltsgesellschaft mbH (2012-09)",
+      "2x 3 Tage Teambuilding — — (1996-01)",
+      "Rhetorik und Kommunikation (Diplom) — Institut für Rhetorik und Kommunikation, Bornheim bei Bonn (1996-11)",
+      "DSGVO Live-Webinar — eRecht24 (2018-07)",
+      "Siemens NX Viewer / 3D Tool V12 — The Implementers GmbH (on-the-job) (2017-11)"
     ]
   },
   "publications": [

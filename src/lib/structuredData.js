@@ -1,26 +1,13 @@
 import { getSiteUrl } from "./site";
+import { getSkills, getCertifications } from "./careerData";
 
 export const buildStructuredData = ({ lang, content }) => {
   const siteUrl = getSiteUrl();
   const personId = `${siteUrl}/#person`;
   const siteId = `${siteUrl}/#website`;
 
-  const skills = [
-    ...content.skills.ai,
-    ...content.skills.automation,
-    ...content.skills.programming,
-    ...content.skills.databases,
-    ...content.skills.ops,
-    ...content.skills.officePm,
-    ...content.skills.cad,
-  ];
-
-  const credentials = [
-    ...content.certifications.quality,
-    ...content.certifications.program,
-    ...content.certifications.healthcare,
-    ...content.certifications.aiData,
-  ];
+  const allSkills = getSkills(lang).map((s) => `${s.name} (${s.level})`);
+  const allCerts = getCertifications(lang);
 
   return {
     "@context": "https://schema.org",
@@ -49,19 +36,19 @@ export const buildStructuredData = ({ lang, content }) => {
       {
         "@type": "ItemList",
         name: "Skills",
-        itemListElement: skills.map((skill, index) => ({
+        itemListElement: allSkills.map((skill, index) => ({
           "@type": "ListItem",
           position: index + 1,
           name: skill,
         })),
       },
-      ...credentials.map((credential) => ({
+      ...allCerts.map((cert) => ({
         "@type": "EducationalOccupationalCredential",
-        name: credential,
+        name: cert.name,
         credentialCategory: "Professional Certification",
         recognizedBy: {
           "@type": "Organization",
-          name: credential.split("—")[1]?.trim() || "Issuing Organization",
+          name: cert.issuer || "Issuing Organization",
         },
       })),
     ],

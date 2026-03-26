@@ -14,34 +14,102 @@ Core Domains:
 - Healthcare Operations & Automation: clinical documentation workflows, structured intake/questionnaires, evaluation/reporting, telemedicine workflows
 - AI / Data / Workflow Engineering: RAG + vector DBs, LLM workflows, Python+SQL pipelines, local LLMs (Ollama/LM Studio), n8n
 
+Skills:
+- os: Windows (bis 11) (proficient), Linux (basic)
+- office: MS Excel (advanced), MS Project (advanced), MS PowerPoint (proficient), MS Word (proficient)
+- cad: OnShape (proficient), AutoCAD 3D (proficient), CATIA V5 (basic)
+- pdm: Sherpa (basic), Matrix One (basic)
+- mrp: SAP (basic)
+- pm_tools: MS Project (advanced), DotProject (basic), eGroup (proficient), eRoom (proficient), BugZilla (proficient)
+- databases: MySQL (basic), Postgres (basic), Access (basic), Lotus 1-2-3 (basic)
+- programming: Python (proficient), C# (basic), Visual Basic (basic), VB.NET (basic), Pascal (basic), C (basic)
+- ai_automation: N8N (proficient), Ollama & LM Studio (lokale KI) (proficient), Claude Code / Codex (proficient), GPT-OS:20B / Qwen etc. (proficient), Lokale Telefonagenten / Local Phone Agents (proficient)
+
 Experience:
-- 1997–2010: Johnson Controls — Test engineering, electronics coordination, PMO, plant leadership, launch/taskforce roles
-- Since 2010: The Implementers — Program management, supplier development, relocations, cost-down
-- Aug 2025: Hospital automation initiative — Implementation of AI-driven evaluation and documentation in hospital operations.
+- 2010-01–present: The Implementers GmbH — Principal Consultant / Managing Director
+- 2009-07–2010-06: Johnson Controls — Program Manager Insolvent Suppliers
+- 2007-12–2009-06: Johnson Controls — Program Manager
+- 2006-09–2007-11: Johnson Controls — Operations Manager (Crisis Management)
+- 2006-01–2007-11: Johnson Controls — Operations Manager
+- 2005-08–2005-12: Johnson Controls — Leader Taskforce "Red Adair"
+- 2003-09–2005-08: Johnson Controls — Technical & Launch Manager
+- 2001-05–2003-08: Johnson Controls — Black Belt in Program Management Office
+- 2000-04–2001-05: Johnson Controls — Project Engineer Electrical / Electronics
+- 1998-02–2000-04: Johnson Controls — Test Engineer / Test Coordinator
+- 1997-02–1998-02: Johnson Controls — Student in Testing
+- 1997-01–1998-01: UB Dr. Hans Schiffer — Backoffice Assistant – Management Consulting
+
+Projects:
+- Invoice API — Medical Billing System 2025-12–2026-02: Billing system for medical providers with ZUGFeRD-compliant invoice generation and OpenEMR integration.
+- Intelligent Document Recognition & Automated Bank Reconciliation 2025-08–present: AI-powered document recognition and automated matching to bank transactions. Multi-model OCR pipeline, ML-based document separation, web UI.
+- Concept for Performance Documentation in Pain Therapy 2026-02–2026-02: Concept for digital performance documentation in pain therapy.
+- VIVO PainCare — AI-powered Clinical Pain Assessment and Admission Justification (Praxis für Schmerztherapie & TCM, Baden-Baden) 2025-09–2026-03: Clinical decision support system: automated pain questionnaire evaluation with 20-factor traffic-light scoring and AI-powered admission justification.
+- Clinical Documentation — AI-powered Transcription and Documentation Pipeline 2025-08–2026-02: AI pipeline for automated medical documentation from physician-patient conversations. Self-hosted LLM, speaker diarization, OpenEMR integration.
+- Supplier Management suspension parts (KTM) 2023-05–2024-11: Supplier development for forged parts with turning/milling incl. changes, launches and claims management.
+- Transfer of 150 serial production items (KTM) 2022-07–2024-01: Transfer of 150 serial production suspension parts due to short-notice plant closure.
+- Lean / Process consultation (Von Roll Schweiz AG) 2018-06–2018-11: Process optimization in internal sales of a Swiss machinery manufacturer.
+- Back Office Support and Process Improvement (Praxis für Schmerztherapie & TCM, Baden-Baden) 2018-05–2025-05: Ongoing support for a private practice: anesthesia protocols, document management, telemedicine workflows.
+- Start-up consulting and coaching (Praxis für Schmerztherapie & TCM, Baden-Baden) 2017-05–2018-04: Start-up consulting and coaching for a private pain therapy & TCM practice.
+- Acting Plant Manager (MAO Automotive GmbH & Co) 2018-02–2018-06: Interim plant management and stabilization of a Hungarian production facility until handover.
+- Program Manager critical suppliers DAG BR238 Door Trim (Megatech Industries Deutschland GmbH) 2016-07–2017-10: Supplier development DAG BR238 door trim incl. sampling, PPAP/EMPB and production launch.
+- Interim COO & acting Plant Manager (PWG Profilrollen-Werkzeugbau GmbH) 2015-09–2016-05: Interim COO & plant manager at aluminum-processing automotive supplier. Expansion of Slovakia site.
+- Labor and Material efficiency program for Headliner production (Motus Headliner GmbH) 2015-01–2015-08: Cost reduction (process, material, labor, suppliers) in headliner production.
+- Program Management interior door trim DAG C292 (Toyota Boshoku America) 2012-09–2015-01: Program management interior door trim DAG C292 incl. industrialization in the USA.
+- Sun visor development consulting (MARTUR FOMPAK) 2012-01–2014-12: Consulting project team in Turkey for sun visor development and first article inspection.
+- Cost down team DAG C218 door panels (Toyota Boshoku Europe NV) 2012-03–2012-08: Cost reduction for interior door trim DAG C218.
+- Transfer of IM tools to new suppliers (Toyota Boshoku Europe NV) 2012-01–2012-08: Transfer of injection molding tools to new suppliers in running production.
+- Program Manager BMW sun visors L7 Platform (Magna) 2010-07–2011-12: Program management BMW sun visors — new development and production transfer.
 
 Education:
-- 1995–1998: Dipl.-Ing. (FH) Maschinenbau, Rheinische FH Köln — Thesis: Versuchsstand ECE-R17 Kopfstützenprüfung.
-- 2001–2003: MBA International Management, UEL/ELBS London — Thesis: Successful Implementation of Kaizen.
-
-Representative Work Types:
-- A: AI-driven evaluation & documentation in hospital operations (implemented, since 2025) — Python/SQL/n8n/LLM workflows; outcomes: standardized outputs, reduced manual effort, improved consistency
-- B: Structured patient intake & workflow automation (active) — n8n/SQL/LLM workflows; outcomes: structured intake data, routing logic, evaluation-ready datasets
-- C: Serial launch / program management (recurring) — program management methods; outcomes: stable SOP, quality + delivery performance, risk mitigation
+- 2001-09–2003-11: MBA Master of Business Administration International Management, UEL University of East London / ELBS London (63)
+- 1995-03–1998-05: Dipl.-Ing. Mechanical Engineering Mechanical Engineering, specialization: Design Engineering, Rheinische Fachhochschule Köln (1,3)
+- 1992-10–1995-01: Car Mechanic (Journeyman Certificate) Automotive Mechanics, Bonner Autohaus GmbH (Vertragswerkstatt der Daimler-Benz AG)
+- 1988-06–1991-06: High School Diploma (Abitur) Focus on Mathematics and Physics, Ernst-Moritz-Arndt-Gymnasium der Stadt Bonn (3,2)
 
 Certifications:
-- DGQ Auditor / Qualitätsmanager (Qualitätstechnik II) — DGQ — 1996
-- REFA-Grundschein – REFA-Sachbearbeiter — REFA-Verband — 1997
-- Six Sigma Black Belt — Johnson Controls — 2001
-- Wertstrom-Engineering — Fraunhofer IAO — 2012
-- Program & Launch Management (PMI / PLUS) — Program & Launch Management University — 2002
-- KMU-Fachberater Sanierung® — KMU-Akademie e.V. — 2010
-- Generative AI im Gesundheitswesen (Kursreihe) — Coursera — 2025
-- Healthcare Operations & Project Management (Kursreihe) — Coursera — 2025
-- Vector Databases for RAG — IBM — 2025
-- Build Intelligent Agents using DeepSeek & n8n — Board Infinity — 2025
-- MySQL for Data Engineering — Duke University — 2025
-- Python for Everybody (Modules) — University of Michigan — 2025
-- Deep Learning with PyTorch, Keras and TensorFlow — IBM — 2026
+- Introduction to Deep Learning & Neural Networks with Keras (IBM) — IBM / Coursera (2026-01)
+- Vector Databases for RAG — IBM / Coursera (2025-05)
+- Build Intelligent Agents using DeepSeek & N8N — Board Infinity / Coursera (2025-05)
+- MySQL for Data Engineering — Duke University / Coursera (2025-05)
+- Python for Everybody (Specialization, 5 courses) — University of Michigan / Coursera (2025-03)
+- Google AI Essentials (Specialization, 5 courses) — Google / Coursera (2025-12)
+- Google Prompting Essentials (Specialization, 4 courses) — Google / Coursera (2025-12)
+- Introduction to AI (Google) — Google / Coursera (2025-12)
+- Introduction to OpenAI Codex — Scrimba / Coursera (2026-01)
+- Generative AI-Powered Solutions for Modern Healthcare (Specialization, 9 courses) — Coursera (2025-10)
+- Toyota Boshoku Business Practices (TBBP) - Solving Problems The TB Way — Toyota Boshoku (2025-10)
+- Value Stream Engineering (4 days) — Fraunhofer IAO, Stuttgart (2012-10)
+- Design and Process FMEA (5 days) — Gabor Kulsar / Magna Steyr (2013-11)
+- Advanced Workshop QM per DIN EN ISO 9001:2008 — KMU-Berater Bundesverband / Gemeinschaft zertifizierter Unternehmensberater (2013-02)
+- JCI SixSigma Certified Black Belt — Johnson Controls (2001-01)
+- EOQ Quality Systems Manager — EOQ / DGQ (1996-01)
+- DGQ-Quality Manager — DGQ Bonn (1995-10)
+- Quality Techniques II — DGQ Bonn (1996-04)
+- DGQ-Auditor / Lead Auditor (DIN EN ISO 10011-2) — DGQ Bonn (1996-05)
+- Internal Auditor of Quality Systems — DGQ (1996-05)
+- Medical Device Act, EU Directives, CE Marking — MUS Fortbildungsseminar, Köln (1996-10)
+- EOQ Quality Auditor — EOQ / DGQ (1996-06)
+- VDA6.1 and QS9000 new demands to the Automotive Industry — Technische Akademie Wuppertal (TAW) (1997-05)
+- Training for internal Audits according to VDA6.1 and QS9000 and BOS — GFQ Akademie GmbH (firmeninternes Seminar bei Johnson Controls) (1998-01)
+- Measurement device studies — Johnson Controls (on-the-job) (1998-01)
+- REFA Basic Certificate — REFA-Verband Köln (1996-09)
+- Work System Design — REFA-Verband (1996-11)
+- Certified Program Manager (PMU / JCI) — Johnson Controls (2002-07)
+- Certified SME Restructuring Consultant — KMU-Akademie e.V., Hamm (2010-03)
+- Managing the company with key performance indicators — RKW Rationalisierungs-Kuratorium der Deutschen Wirtschaft e.V., Bayern Büro Nürnberg (1996-10)
+- Strategy for Success (EKS Success Strategy) — KMU-Akademie e.V. / Cord Tepelmann, UnternehmerCoach (2010-04)
+- Environmental Simulation of Vibration and Shock Loads (Shaker Course) — Technische Akademie Esslingen (TAE) (1999-01)
+- Training in Test methods and procedures — Prince Automotive / Johnson Controls (on-the-job) (1998-08)
+- CANoe Hands-on Workshop (1 day) — Vector Informatik GmbH, Stuttgart (2000-09)
+- English in Management and International Business — — (2001-02)
+- Internal trainings for project engineers - seats — Johnson Controls (2000-01)
+- TPG Microsoft Project Info Day — TPG The Project Group (2012-10)
+- DVS Welding Courses: Gas Welding (G-Schw) and MAG Thin Sheet Welding (MAG-St D) — DVS / Handwerkszentrum Bonn (1993-04)
+- Data Protection 2012 — Luther Rechtsanwaltsgesellschaft mbH (2012-09)
+- 2x 3 days courses for Teambuilding — — (1996-01)
+- Rhetoric and Communication (Diploma) — Institut für Rhetorik und Kommunikation, Bornheim bei Bonn (1996-11)
+- GDPR Live Webinar — eRecht24 (2018-07)
+- Siemens NX Viewer / 3D Tool V12 — The Implementers GmbH (on-the-job) (2017-11)
 
 Publications:
 - Diploma thesis (Rheinische FH Cologne, 1998): Versuchsstand ECE-R17 Kopfstuetzenpruefung. (/docs/00-DIP-Inhalt.pdf)
