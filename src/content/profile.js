@@ -22,7 +22,7 @@ export const profileContent = {
     de: {
       headline: "Prozessoptimierung • Program Management • Generative AI • Healthcare Automation",
       oneLiner:
-        "Senior Program Manager und Prozessoptimierer mit 20+ Jahren Automotive/Industrie (Serienanlauf, globale Werksstrukturen). Seit 2025 Schwerpunkt: Generative AI, Healthcare Automation, Datenanalyse, KI-gestützte Prozessoptimierung und Telemedizin-Workflows.",
+        "Prozessoptimierer & Program Manager mit 20+ Jahren Automobilindustrie, Serienanläufen und globalen Werksstrukturen. Seit 2024 verstärkt fokussiert auf Generative AI, Healthcare Automation, Datenanalyse, KI-gestützte Prozessoptimierung und Telemedizin-Workflows. Fundierte Kenntnisse in Python, MySQL, RAG-Architekturen, KI-Automatisierung (Lokale-LLM, Lokale-Agenten) und Healthcare-Operations.",
       keywords: [
         "Prozessoptimierung",
         "Program Management",
@@ -40,7 +40,7 @@ export const profileContent = {
     en: {
       headline: "Process Optimization • Program Management • Generative AI • Healthcare Automation",
       oneLiner:
-        "Senior program manager and process optimizer with 20+ years in automotive/industrial operations — since 2025 focused on generative AI, healthcare automation and data-driven workflow optimization.",
+        "Process optimizer & Program Manager with 20+ years in automotive industry, production launches and global plant structures. Since 2024 increasingly focused on Generative AI, Healthcare Automation, data analysis, AI-driven process optimization and telemedicine workflows. Solid expertise in Python, MySQL, RAG architectures, AI automation (local LLM, local agents) and healthcare operations.",
       keywords: [
         "process optimization",
         "program management",

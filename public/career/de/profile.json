@@ -32,9 +32,11 @@
       "summary": "Beratung / Interim Management",
       "highlights": [
         "Beratung und Interim Management in der Automobilindustrie, Healthcare und weiteren Branchen. Schwerpunkte: Programm Management, Serienanläufe, Werksleitung, Lieferantenentwicklung, Kostenreduzierung, Prozessoptimierung, KI-Implementierung und KI-gestützte Prozessautomatisierung.",
-        "Invoice API — Medizinisches Abrechnungssystem: Vollständiges Abrechnungssystem für eine ärztliche Praxis mit Mehrmandantenfähigkeit (Arzt, IT-Dienstleistungen, Apotheke). Draft→Finalisierung→Storno-Workflow mit datenbankgestützter State Machine (PL/pgSQL-Trigger). ZUGFeRD/EN16931-konforme Rechnungserzeugung (PDF mit eingebettetem CII-XML). OpenEMR-Integration (Patienten, Diagnosen, Behandlungen). Server-Side Rendering mit Jinja2 + HTMX. Snapshot-Pattern für revisionssichere Rechnungen. ~4.200 LOC Python, ~1.700 LOC SQL, 30+ Endpoints, 13 DB-Migrationen.",
-        "Intelligente Dokumentenerkennung & automatisierte Bankabstimmung: KI-gestützte Pipeline zur automatischen Erkennung, Klassifizierung und Zuordnung von Geschäftsdokumenten (Rechnungen, Belege, Verträge) zu Bankbewegungen. Multi-Modell OCR-Pipeline (PaddleOCR, Qwen-VL, Mistral-Nemo/Qwen3.5) zur strukturierten Metadaten-Extraktion aus gescannten Dokumenten. Automatische Dokumententrennung in Multi-Dokument-PDFs mittels LLM-Feature-Extraktion und trainiertem ML-Modell (GradientBoosting, F1=0.59). Index-basierte Bank-Matching-Engine für >3.000 Transaktionen und >4.000 Dokumente in ~7 Sekunden. Web-UI (FastAPI) mit Dokumentenansicht, 4-Spalten-Vergleich, Bankkontenübersicht und konfigurierbaren Scoring-Parametern. DB-gesteuerte Prompt-Versionierung mit Loop-basiertem Retry und automatischem Fallback. Infrastruktur: Docker Compose, PostgreSQL, Ollama-LLM-Server mit Tesla V100 und RTX-GPUs.",
-        "Konzept Leistungsdokumentation Schmerztherapie: Konzept zur Leistungsdokumentation der Abteilung Schmerztherapie mit interdisziplinärer Eingabe und Abgleich mit OPS-Katalog.",
+        "TI-Flows Stack — Custom Workflow-Automatisierungsplattform: Kompletter Ersatz der n8n-Workflow-Engine durch eine maßgeschneiderte Python/React-Plattform für medizinische Datenverarbeitung, Server-Sicherheit und Portfolio-Management. Async-Backend (FastAPI + SQLAlchemy + asyncpg), React/TypeScript-SPA mit 30 Seiten, 20+ Workflows mit Cron-Scheduling und Execution-Chaining, 11 Background-Tasks. Workflow-Engine mit dynamischem Handler-Import, WebSocket-Live-Logs und verketteter Ausführung. 7-Schichten-Sicherheitskonzept: IP-Whitelist/Blacklist (Caddy), Brute-Force-Monitor mit Auto-Blacklisting, Telegram-gesteuerte IP-Freischaltung per Inline-Keyboard, JWT-Auth, Device-Tokens, Rate-Limiting. 5-stufige medizinische Transkript-Pipeline (WhisperX-Diktat bis Akteneintrag) mit LLM-Quality-Gates. Depot-Modul: Playwright-basierter comdirect-Scraper, 7-Faktor-Aktien-Ranking, KI-News-Zusammenfassung (Ollama). Zentrale Ollama-Queue mit Semaphore-basierter GPU-Serialisierung. Shared Library (flowlib) für 3 Services. ~24.000 LOC (12.800 Python + 8.000 TypeScript + 1.600 flowlib + 2.000 SQL), 21 DB-Migrationen. Stack: Python 3.10, FastAPI, SQLAlchemy async, React 18, TypeScript, Vite, PostgreSQL (pgvector), Docker Compose, Caddy, Ollama, Telegram Bot API, Playwright.",
+        "Invoice API — Medizinisches Abrechnungssystem: Vollständiges Abrechnungssystem für eine ärztliche Praxis mit Mehrmandantenfähigkeit (Arzt, IT-Dienstleistungen, Apotheke). Draft/Finalisierung/Storno-Workflow mit datenbankgestützter State Machine (PL/pgSQL-Trigger) — finalisierte Rechnungen sind unveränderlich (Revisionssicherheit). ZUGFeRD/EN16931-konforme Rechnungserzeugung (PDF mit eingebettetem CII-XML). OpenEMR-Integration: Patientenstammdaten, Diagnosen, Behandlungen. Steuerlogik: §4 UStG-Befreiung, Reverse Charge, innergemeinschaftliche Lieferungen. Server-Side Rendering mit Jinja2 + HTMX. Snapshot-Pattern für revisionssichere Rechnungen. ~4.200 LOC Python, ~1.700 LOC SQL, 30+ Endpoints, 13 DB-Migrationen. Stack: Python, FastAPI, SQLAlchemy (async), PostgreSQL, HTMX, Jinja2, Docker, Caddy.",
+        "Intelligente Dokumentenerkennung & automatisierte Bankabstimmung: Architektur und produktiver Betrieb einer On-Premise OCR-/Dokumenten-Pipeline fuer deutsche Steuer- und Buchhaltungsdokumente; Ersatz fuer Azure Document Intelligence mit messbar besserer Erkennungsqualitaet und vollstaendiger Datenhoheit. Volumen: 10.871 verarbeitete Seiten, 97,8% Erfolgsquote; laufende Cloud-Kosten von $1.500/Jahr auf 0 EUR gesenkt. Azure-Vergleich (400 Dokumente A/B-Test): Rechnungsnummer 33%→86%, Gesamtbetrag 41%→88%, Absender 58%→94%. Fuenf-Layer-Stack: PaddleOCR (Baseline), qwen3-vl:4b (schnelle Vision), mistral-nemo:12b (Text-Fallback), qwen3.5:27b (hochqualitative Strukturextraktion), Qwen3.5:27b Klassifikation in 18 Dokumenttypen mit Mandanten-Routing. Acht produktive Resilienz-Mechanismen entwickelt: Watchdog-Threads mit Wall-Clock + GPU-Idle + Cross-Host-Stall-Polling, eigene Degeneracy-Detection fuer pathologische Vision-Modell-Ausgaben, Partial-Text-Recovery, Cold-Load-Selbstheilung (12s Cost vs 180s gesparter Hang = 15x Netto-Gewinn), Per-Phase-Modell-Unload mit Verifikation, Cross-Host-Monitoring mit REST-API und drei Confidence-Stufen fuer Hang-Typen. Nachgelagerte Layer: Index-basiertes Bank-Matching (>3.000 Transaktionen x >4.000 Dokumente in ca. 7 Sekunden) und DATEV-EXTF-CSV-Export nach gelernten Kontierungsregeln. Web-UI (FastAPI) mit 4-Spalten-Vergleich der Extraktionsquellen, DB-gesteuerte Prompt-Versionierung mit Fallback-Ketten. Infrastruktur: Docker Compose Multi-Container, PostgreSQL auf NAS, GPU-Sharing (RTX 3090 Ti + RTX 5060 Ti) via Ollama. Stack: Python, FastAPI, PaddleOCR, Ollama (qwen3-vl, qwen3.5, mistral-nemo, deepseek-ocr, gemma3), PostgreSQL, Docker, scikit-learn, httpx mit Streaming + Watchdog-Cancel.",
+        "HRV-Analyse-Pipeline — Automatisierte Herzratenvariabilitäts-Auswertung (Praxis für Schmerztherapie & TCM, Baden-Baden): Modulare Pipeline zur reproduzierbaren HRV-Analyse von 24–26h Langzeit-EKG-Aufzeichnungen im EDF-Format. Vollautomatische Verarbeitung: EDF-Einlesen, R-Peak-Detektion (Bandpass, Envelope, Refraktärbereinigung), Artefaktkorrektur, Zeit-/Frequenzbereichsmetriken (SDNN, RMSSD, LF/HF), PNS/SNS-Trendberechnung (Kubios-kalibriert), ECG-basierte Atemfrequenzschätzung und Time-Varying HRV Power Spectrum. Docker-Container mit File-Watcher für Batch-Betrieb. Ersetzt manuelle Legacy-Windows-Software (8 Schritte auf 2). Stack: Python, NumPy, SciPy, Matplotlib, pyEDFlib, Docker.",
+        "Schmerztherapie-Dokumentationssystem (schmerz_dok): Klinikfähiges Dokumentationssystem für die multimodale Schmerztherapie. Unterstützt ein interdisziplinäres Team (Ärzte, Psychotherapeuten, Physiotherapeuten, Pflege). OPS-basiertes Anforderungs-Tracking (OPS 8-918, 8-91c) mit Meilensteinen auf 21-Tage-Zeitachse. 4-Farben-Ampelsystem für Echtzeit-Therapiefortschrittskontrolle. Bettenbelegungskalender mit Gantt-Visualisierung und Überbelastungserkennung. Rich-Text-Editor (TipTap/ProseMirror) mit Versionierung. 10-stufige Rollenhierarchie mit Audit-Trail. Serverseitige PDF-Reports (WeasyPrint). Stack: Python 3.12, FastAPI, SQLAlchemy 2.0 (async), React 19, Tailwind CSS, PostgreSQL 16, Docker, Nginx, JWT.",
         "VIVO PainCare — KI-gestützte klinische Schmerzbewertung und Aufnahmebegründung (Praxis für Schmerztherapie & TCM, Baden-Baden): Klinisches Entscheidungsunterstützungssystem für die stationäre Schmerztherapie. Automatisierte Verarbeitung von VIVO PainCare-Schmerzfragebögen (PDF → Markdown → Regex-Extraktion → Datenbank) mit 20-Faktor-Ampelbewertung (Rot-Gelb-Grün) über standardisierte Schmerzskalen (VAS, PDI, MPSS, DASS, FFbH, VR-12, NHP, HKF-R10, SBL). KI-generierte Therapieempfehlungen und objektive Begründungen für den Krankenhausaufenthalt nach Wirtschaftlichkeitsgebot (medgemma:27b, Self-Hosted). Längsschnittanalyse über 182-Tage-Verlauf mit automatischer Entlassbrief-Textbausteinerstellung. Druckoptimierter A4-One-Pager für die Patientenakte. 206 Fragebögen verarbeitet, ~28.000 Antworten extrahiert, 117 Patienten im System. Stack: FastAPI, Ollama (medgemma:27b), PyMuPDF, React + TypeScript, PostgreSQL, Docker.",
         "Klinische Dokumentation — KI-gestützte Transkriptions- und Dokumentationspipeline: End-to-End-System zur automatisierten Erstellung medizinischer Dokumentation aus Arzt-Patienten-Gesprächen. Aufzeichnung nach Einwilligung, Upload per App oder USB-Diktiergerät, Transkription mit WhisperX (Speaker Diarization). Fünfstufige LLM-Pipeline (Ollama, Self-Hosted): automatische Themenerkennung, Patientenzuordnung, strukturierte Zusammenfassung, Akteneintrag und Untersuchungsbericht als Vorlagen für die Praxissoftware (OpenEMR). Themenbasiertes Prompt-Routing mit DB-gestützter Versionierung und A/B-Testing. Quality Gates gegen repetitive LLM-Ausgaben. Review-UI für ärztliche Freigabe mit direktem Upload nach OpenEMR. Vollständig Self-Hosted — kein Cloud-LLM, kein externer Transkriptionsdienst. Stack: FastAPI, WhisperX, Ollama (qwen3.5/gpt-oss), PostgreSQL, React + TypeScript, Docker, Telegram Bot API, NFS, Caddy.",
         "Lieferantenentwicklung Fahrwerksteile (KTM): Lieferantenentwicklung Fahrwerksteile (Fließpressteile mit Drehen- und Fräsbearbeitung) inkl. Änderungen, Neuanläufen, Verlagerungen und Engpasssteuerung.",
@@ -224,19 +226,19 @@
     {
       "name": "Generative AI-Powered Solutions for Modern Healthcare (Specialization, 9 Kurse)",
       "issuer": "Coursera",
-      "date": "2025-10",
+      "date": "2025-11",
       "url": ""
     },
     {
       "name": "Vector Databases for RAG",
       "issuer": "IBM / Coursera",
-      "date": "2025-05",
+      "date": "2025-10",
       "url": ""
     },
     {
       "name": "Build Intelligent Agents using DeepSeek & N8N",
       "issuer": "Board Infinity / Coursera",
-      "date": "2025-05",
+      "date": "2025-07",
       "url": ""
     },
     {
@@ -248,13 +250,13 @@
     {
       "name": "Python for Everybody (Specialization, 5 Kurse)",
       "issuer": "University of Michigan / Coursera",
-      "date": "2025-03",
+      "date": "2025-04",
       "url": ""
     },
     {
       "name": "Google AI Essentials (Specialization, 5 Kurse)",
       "issuer": "Google / Coursera",
-      "date": "2025-12",
+      "date": "2026-01",
       "url": ""
     },
     {

@@ -1,7 +1,7 @@
 # Dipl.-Ing. Michael Schiffer, MBA — Profil
 
 ## Kurzprofil
-Senior Program Manager und Prozessoptimierer mit 20+ Jahren Automotive/Industrie (Serienanlauf, globale Werksstrukturen). Seit 2025 Schwerpunkt: Generative AI, Healthcare Automation, Datenanalyse, KI-gestützte Prozessoptimierung und Telemedizin-Workflows.
+Prozessoptimierer & Program Manager mit 20+ Jahren Automobilindustrie, Serienanläufen und globalen Werksstrukturen. Seit 2024 verstärkt fokussiert auf Generative AI, Healthcare Automation, Datenanalyse, KI-gestützte Prozessoptimierung und Telemedizin-Workflows. Fundierte Kenntnisse in Python, MySQL, RAG-Architekturen, KI-Automatisierung (Lokale-LLM, Lokale-Agenten) und Healthcare-Operations.
 
 ## Kernbereiche
 - Automotive- & Manufacturing Operations: Serienanlauf, globale Werke, Ausschussreduzierung, Lieferantenentwicklung, Relocations, Cost-Down

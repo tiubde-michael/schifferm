@@ -1,7 +1,7 @@
 # Dipl.-Ing. Michael Schiffer, MBA — Profile
 
 ## Summary
-Senior program manager and process optimizer with 20+ years in automotive/industrial operations — since 2025 focused on generative AI, healthcare automation and data-driven workflow optimization.
+Process optimizer & Program Manager with 20+ years in automotive industry, production launches and global plant structures. Since 2024 increasingly focused on Generative AI, Healthcare Automation, data analysis, AI-driven process optimization and telemedicine workflows. Solid expertise in Python, MySQL, RAG architectures, AI automation (local LLM, local agents) and healthcare operations.
 
 ## Core Domains
 - Automotive & Manufacturing Operations: serial launches, global plants, scrap reduction, supplier development, relocations, cost-down
